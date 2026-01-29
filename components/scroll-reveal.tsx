@@ -18,10 +18,10 @@ export function ScrollReveal({
     duration = 0.8
 }: ScrollRevealProps) {
     const directions = {
-        up: { y: 40, x: 0 },
-        down: { y: -40, x: 0 },
-        left: { x: 40, y: 0 },
-        right: { x: -40, y: 0 }
+        up: { y: 20, x: 0 },
+        down: { y: -20, x: 0 },
+        left: { x: 20, y: 0 },
+        right: { x: -20, y: 0 }
     }
 
     return (
@@ -32,12 +32,13 @@ export function ScrollReveal({
                 x: directions[direction].x
             }}
             whileInView={{ opacity: 1, y: 0, x: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, margin: "-10px" }}
             transition={{
-                duration: duration,
-                ease: [0.33, 1, 0.68, 1],
+                duration: 0.4,
+                ease: "easeOut",
                 delay
             }}
+            style={{ willChange: 'transform, opacity' }}
             className={className}
         >
             {children}

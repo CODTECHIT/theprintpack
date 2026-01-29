@@ -27,7 +27,7 @@ export function AboutSection() {
             <div className="absolute -top-6 -left-6 w-32 h-32 border-l-2 border-t-2 border-[#2E7D32]/20 hidden md:block" />
             <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r-2 border-b-2 border-[#A47551]/20 hidden md:block" />
 
-            <div className="relative h-[450px] md:h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-left-12 duration-1000">
+            <div className="relative h-[450px] md:h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-left-12 duration-500">
               <Image
                 src="/about-packaging.jpg"
                 alt="The Print Pack Company eco-friendly packaging solutions"
