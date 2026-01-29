@@ -61,15 +61,23 @@ export function HeroSection() {
           {/* Left: Text Content */}
           <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left">
             <div className="space-y-4">
-              <motion.h1 variants={itemVariants} className="text-3xl sm:text-5xl md:text-6xl font-bold leading-tight" style={{ color: '#2B2B2B' }}>
+              <motion.h1
+                variants={itemVariants}
+                className="text-4xl sm:text-5xl md:text-7xl font-bold leading-[1.1] tracking-tight px-2"
+                style={{ color: '#2B2B2B' }}
+              >
                 Sustainable Packaging.
                 <br />
-                <span style={{ color: '#2E7D32' }}>Printed for Your Brand.</span>
-                <span className="block mt-3 text-2xl sm:text-3xl font-serif italic" style={{ color: '#2B2B2B' }}>
-                  — <span className="text-[#2E7D32]">The Print Pack</span>
+                <span className="text-[#2E7D32]">Printed for Your Brand.</span>
+                <span className="block mt-4 text-sm sm:text-xl font-serif italic text-gray-500" style={{ fontFamily: 'Georgia, serif' }}>
+                  — <span className="text-[#2E7D32] border-b border-[#2E7D32]/20 pb-0.5">The Print Pack</span>
                 </span>
               </motion.h1>
-              <motion.p variants={itemVariants} className="text-base sm:text-xl leading-relaxed max-w-xl mx-auto md:mx-0" style={{ color: '#6B6B6B' }}>
+              <motion.p
+                variants={itemVariants}
+                className="text-sm sm:text-xl leading-relaxed max-w-xl mx-auto md:mx-0 px-4 sm:px-0"
+                style={{ color: '#6B6B6B' }}
+              >
                 Eco-friendly print-on-demand packaging solutions crafted in Hyderabad. Replace plastic with beautiful, sustainable materials.
               </motion.p>
             </div>
