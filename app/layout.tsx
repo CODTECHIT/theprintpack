@@ -11,7 +11,6 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: 'The Print Pack Company | Eco-Friendly Packaging Solutions',
   description: 'Sustainable, eco-friendly packaging and print-on-demand solutions crafted in Hyderabad. Custom paper bags, packaging boxes, and mailer solutions for your brand.',
-  generator: 'v0.app',
   openGraph: {
     title: 'The Print Pack Company | Eco-Friendly Packaging',
     description: 'Sustainable packaging solutions for brands that care about the environment',
