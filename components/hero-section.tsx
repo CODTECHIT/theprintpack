@@ -59,16 +59,16 @@ export function HeroSection() {
           animate="visible"
         >
           {/* Text Content */}
-          <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left items-center md:items-start max-w-full md:pr-6 lg:pr-10">
+          <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left items-center md:items-start max-w-full md:pr-10 lg:pr-16">
             <div className="space-y-4 w-full">
               <motion.h1
                 variants={itemVariants}
-                className="text-[1.85rem] sm:text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-[1.1] tracking-tight px-2 md:px-0 flex flex-col items-center md:items-start"
+                className="text-[2rem] sm:text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-[1.1] tracking-tight px-2 md:px-0 flex flex-col items-center md:items-start"
                 style={{ color: '#2B2B2B' }}
               >
                 <span className="block mb-1 sm:mb-0">Sustainable Packaging.</span>
                 <span className="text-[#2E7D32] block">Printed for Your Brand.</span>
-                <span className="block mt-6 md:mt-4 text-xl sm:text-2xl font-serif italic" style={{ fontFamily: 'Georgia, serif' }}>
+                <span className="block mt-6 md:mt-4 text-[1.5rem] sm:text-2xl md:text-2xl lg:text-3xl font-serif italic" style={{ fontFamily: 'Georgia, serif' }}>
                   <span style={{ color: '#2B2B2B' }}>—</span> <span className="text-[#2E7D32]">The Print Pack</span>
                 </span>
               </motion.h1>
