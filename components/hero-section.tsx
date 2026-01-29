@@ -4,7 +4,7 @@ import { MessageCircle, Phone } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-10 md:pt-24 md:pb-16" style={{ background: 'linear-gradient(to bottom, #F5F5F0, var(--background), rgba(232, 232, 227, 0.2))' }}>
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-28 pb-12 md:pt-32 md:pb-20" style={{ background: 'linear-gradient(to bottom, #F5F5F0, var(--background), rgba(232, 232, 227, 0.2))' }}>
       {/* Decorative leaf elements */}
       <div className="hidden md:block absolute top-20 right-10 opacity-10 md:opacity-20 pointer-events-none">
         <svg width="200" height="200" viewBox="0 0 200 200" style={{ color: '#2E7D32' }}>
@@ -68,7 +68,7 @@ export function HeroSection() {
         </div>
 
         {/* Trust indicators */}
-        <div className="mt-16 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 pt-12 border-t" style={{ borderColor: '#E8E8E3' }}>
+        <div className="mt-12 md:mt-20 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 pt-10 md:pt-12 border-t" style={{ borderColor: '#E8E8E3' }}>
           <div className="text-center space-y-2">
             <p className="text-2xl md:text-3xl font-bold" style={{ color: '#2E7D32' }}>100%</p>
             <p className="text-sm md:text-base" style={{ color: '#6B6B6B' }}>Eco Materials</p>

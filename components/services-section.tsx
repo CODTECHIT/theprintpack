@@ -1,6 +1,8 @@
+'use client'
+
 import Image from 'next/image'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Leaf } from 'lucide-react'
+import { Leaf, MessageCircle } from 'lucide-react'
 
 const services = [
   {
@@ -31,8 +33,13 @@ const services = [
 ]
 
 export function ServicesSection() {
+  const handleWhatsApp = (serviceName: string) => {
+    const message = encodeURIComponent(`Hello! I am interested in getting a quote for ${serviceName}.`)
+    window.open(`https://wa.me/917674062263?text=${message}`, '_blank')
+  }
+
   return (
-    <section className="py-24 md:py-32 bg-[#F9F9F4] relative overflow-hidden">
+    <section className="py-16 md:py-32 bg-[#F9F9F4] relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#2E7D32]/5 rounded-full blur-3xl -mr-48 -mt-48" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#A47551]/5 rounded-full blur-3xl -ml-48 -mb-48" />
@@ -59,11 +66,11 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-[32px] bg-white border border-[#E8E8E3] transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2
+              className={`group relative overflow-hidden rounded-[32px] bg-white border border-[#E8E8E3] transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 flex flex-col
                 ${index === 0 ? 'lg:col-span-8' : index === 1 ? 'lg:col-span-4' : 'lg:col-span-4'}`}
             >
               {/* Image Container */}
-              <div className="relative h-72 w-full overflow-hidden">
+              <div className="relative h-72 w-full overflow-hidden shrink-0">
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
@@ -71,7 +78,7 @@ export function ServicesSection() {
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
 
                 {/* Float Badge */}
                 <div className="absolute bottom-6 left-6 right-6">
@@ -82,13 +89,19 @@ export function ServicesSection() {
               </div>
 
               {/* Content */}
-              <div className="p-8 space-y-4">
+              <div className="p-6 md:p-8 space-y-6 flex flex-col flex-grow">
                 <p className="text-sm leading-relaxed text-[#6B6B6B]">
                   {service.description}
                 </p>
-                <div className="flex items-center gap-2 text-[#2E7D32] text-sm font-semibold opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-[-10px] group-hover:translate-x-0">
-                  <span>Explore detail</span>
-                  <div className="h-[1px] w-8 bg-[#2E7D32]" />
+
+                <div className="mt-auto pt-2">
+                  <button
+                    onClick={() => handleWhatsApp(service.title)}
+                    className="w-full py-3 bg-[#F5F5F0] hover:bg-[#2E7D32] text-[#2E7D32] hover:text-white rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2 group/btn active:scale-95"
+                  >
+                    <MessageCircle size={18} />
+                    Get a Quote
+                  </button>
                 </div>
               </div>
             </div>
@@ -96,7 +109,7 @@ export function ServicesSection() {
         </div>
 
         {/* Premium Highlights */}
-        <div className="mt-24 pt-16 border-t border-[#E8E8E3]">
+        <div className="mt-16 md:mt-24 pt-12 md:pt-16 border-t border-[#E8E8E3]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               { label: 'Eco Materials', value: '100%', color: '#2E7D32', sub: 'Biodegradable & Recyclable' },

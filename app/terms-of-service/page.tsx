@@ -10,7 +10,7 @@ export default function TermsOfService() {
         <main className="bg-[#F5F5F0] min-h-screen">
             <Navigation />
 
-            <div className="pt-32 pb-24 px-6">
+            <div className="pt-24 pb-16 md:pt-32 md:pb-24 px-4 md:px-6">
                 <div className="max-w-4xl mx-auto space-y-12">
                     {/* Header */}
                     <div className="text-center space-y-6">
@@ -25,7 +25,7 @@ export default function TermsOfService() {
                     </div>
 
                     {/* Content */}
-                    <div className="bg-white rounded-[40px] p-8 md:p-16 shadow-2xl shadow-[#2E7D32]/5 border border-[#E8E8E3] prose prose-green max-w-none">
+                    <div className="bg-white rounded-[32px] md:rounded-[40px] p-6 md:p-16 shadow-2xl shadow-[#2E7D32]/5 border border-[#E8E8E3] prose prose-green max-w-none">
                         <section className="space-y-6">
                             <h2 className="text-2xl font-bold text-[#2B2B2B] flex items-center gap-3">
                                 <Leaf className="text-[#2E7D32]" size={24} />

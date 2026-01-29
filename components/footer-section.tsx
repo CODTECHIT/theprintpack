@@ -13,13 +13,13 @@ const services = [
 
 export function FooterSection() {
   return (
-    <footer className="relative bg-[#1A3C1C] text-white pt-24 pb-12 overflow-hidden">
+    <footer className="relative bg-[#1A3C1C] text-white pt-16 md:pt-24 pb-12 overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-white/5 rounded-full blur-[120px] -mr-64 -mt-64" />
       <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-[#7CB342]/10 rounded-full blur-[100px] -ml-48 -mb-48" />
 
       <div className="container max-w-7xl mx-auto px-6 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 lg:gap-8 pb-20">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 md:gap-16 lg:gap-8 pb-12 md:pb-20">
 
           {/* Brand & Mission - Wider span */}
           <div className="lg:col-span-4 space-y-8">

@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { MessageCircle, Phone, MapPin, Clock, Send, ShieldCheck, Mail, Sparkles } from 'lucide-react';
 import { Navigation } from '@/components/navigation';
 import { FooterSection } from '@/components/footer-section';
+import { ScrollReveal } from '@/components/scroll-reveal';
 
 export default function Contact() {
   const [formData, setFormData] = React.useState({
@@ -37,7 +38,7 @@ Please let me know the next steps.`;
       <Navigation />
 
       {/* Premium Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center pt-32 pb-20 overflow-hidden">
+      <section className="relative min-h-[50vh] flex items-center justify-center pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden">
         {/* Background Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -72,182 +73,193 @@ Please let me know the next steps.`;
       </section>
 
       {/* Contact Info Cards - Premium Grid */}
-      <section className="py-24 px-6 relative z-10">
+      <section className="py-12 md:py-24 px-4 md:px-6 relative z-10">
         <div className="container max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* WhatsApp Card */}
-            <div
-              onClick={handleWhatsApp}
-              className="group bg-white p-12 rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 cursor-pointer"
-            >
-              <div className="w-20 h-20 bg-[#F0F5F0] rounded-3xl flex items-center justify-center text-[#2E7D32] mx-auto group-hover:scale-110 group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-500">
-                <MessageCircle size={32} />
+            <ScrollReveal delay={0}>
+              <div
+                onClick={handleWhatsApp}
+                className="group bg-white p-6 md:p-12 rounded-[32px] md:rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 cursor-pointer h-full"
+              >
+                <div className="w-20 h-20 bg-[#F0F5F0] rounded-3xl flex items-center justify-center text-[#2E7D32] mx-auto group-hover:scale-110 group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-500">
+                  <MessageCircle size={32} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold">WhatsApp</h3>
+                  <p className="text-[#6B6B6B] font-light">Instant messaging support for quick queries and quotes.</p>
+                </div>
+                <p className="text-[#2E7D32] font-bold text-sm uppercase tracking-widest pt-4">Chat Now</p>
               </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">WhatsApp</h3>
-                <p className="text-[#6B6B6B] font-light">Instant messaging support for quick queries and quotes.</p>
-              </div>
-              <p className="text-[#2E7D32] font-bold text-sm uppercase tracking-widest pt-4">Chat Now</p>
-            </div>
+            </ScrollReveal>
 
             {/* Phone Card */}
-            <div
-              onClick={handleCall}
-              className="group bg-white p-12 rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7CB342]/10 hover:-translate-y-2 cursor-pointer"
-            >
-              <div className="w-20 h-20 bg-[#F9FAF0] rounded-3xl flex items-center justify-center text-[#7CB342] mx-auto group-hover:scale-110 group-hover:bg-[#7CB342] group-hover:text-white transition-all duration-500">
-                <Phone size={32} />
+            <ScrollReveal delay={0.1}>
+              <div
+                onClick={handleCall}
+                className="group bg-white p-6 md:p-12 rounded-[32px] md:rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7CB342]/10 hover:-translate-y-2 cursor-pointer h-full"
+              >
+                <div className="w-20 h-20 bg-[#F9FAF0] rounded-3xl flex items-center justify-center text-[#7CB342] mx-auto group-hover:scale-110 group-hover:bg-[#7CB342] group-hover:text-white transition-all duration-500">
+                  <Phone size={32} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold">Direct Call</h3>
+                  <p className="text-[#6B6B6B] font-light">(+91) 7674 062 263 <br /> Mon-Fri, 9AM-6PM IST</p>
+                </div>
+                <p className="text-[#7CB342] font-bold text-sm uppercase tracking-widest pt-4">Call Support</p>
               </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Direct Call</h3>
-                <p className="text-[#6B6B6B] font-light">(+91) 7674 062 263 <br /> Mon-Fri, 9AM-6PM IST</p>
-              </div>
-              <p className="text-[#7CB342] font-bold text-sm uppercase tracking-widest pt-4">Call Support</p>
-            </div>
+            </ScrollReveal>
 
             {/* Location Card */}
-            <div className="group bg-white p-12 rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#A47551]/10 hover:-translate-y-2">
-              <div className="w-20 h-20 bg-[#FAF5F0] rounded-3xl flex items-center justify-center text-[#A47551] mx-auto group-hover:scale-110 group-hover:bg-[#A47551] group-hover:text-white transition-all duration-500">
-                <MapPin size={32} />
+            <ScrollReveal delay={0.2}>
+              <div className="group bg-white p-6 md:p-12 rounded-[32px] md:rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#A47551]/10 hover:-translate-y-2 h-full">
+                <div className="w-20 h-20 bg-[#FAF5F0] rounded-3xl flex items-center justify-center text-[#A47551] mx-auto group-hover:scale-110 group-hover:bg-[#A47551] group-hover:text-white transition-all duration-500">
+                  <MapPin size={32} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-2xl font-bold">Office</h3>
+                  <p className="text-[#6B6B6B] font-light">Kondapur, Telangana <br /> Serving Global Markets</p>
+                </div>
+                <p className="text-[#A47551] font-bold text-sm uppercase tracking-widest pt-4">Headquarters</p>
               </div>
-              <div className="space-y-2">
-                <h3 className="text-2xl font-bold">Office</h3>
-                <p className="text-[#6B6B6B] font-light">Kondapur, Telangana <br /> Serving Global Markets</p>
-              </div>
-              <p className="text-[#A47551] font-bold text-sm uppercase tracking-widest pt-4">Headquarters</p>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
       {/* Split Form & Image Section */}
-      <section className="py-24 md:py-32 bg-white overflow-hidden">
+      <section className="py-16 md:py-32 bg-white overflow-hidden">
         <div className="container max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             {/* Form Side */}
-            <div className="space-y-12">
-              <div className="space-y-6">
-                <h2 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>
-                  Send us a <span className="text-[#2E7D32]">Message</span>
-                </h2>
-                <p className="text-[#6B6B6B] text-lg font-light leading-relaxed">
-                  Fill out the form below and one of our packaging specialists will reach out to you within 24 hours.
-                </p>
-              </div>
-
-              <form
-                className="space-y-6"
-                onSubmit={handleFormSubmit}
-              >
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Full Name</label>
-                    <input
-                      type="text"
-                      placeholder="e.g. NAME"
-                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
-                      required
-                      value={formData.fullName}
-                      onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Company Name</label>
-                    <input
-                      type="text"
-                      placeholder="Your brand name"
-                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
-                      value={formData.companyName}
-                      onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                    />
-                  </div>
+            <ScrollReveal>
+              <div className="space-y-12">
+                <div className="space-y-6">
+                  <h2 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>
+                    Send us a <span className="text-[#2E7D32]">Message</span>
+                  </h2>
+                  <p className="text-[#6B6B6B] text-lg font-light leading-relaxed">
+                    Fill out the form below and one of our packaging specialists will reach out to you within 24 hours.
+                  </p>
                 </div>
 
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Subject Requirement</label>
-                  <select
-                    className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none appearance-none cursor-pointer"
-                    value={formData.subject}
-                    onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                  >
-                    <option>Kraft Paper Bags</option>
-                    <option>Packaging Boxes</option>
-                    <option>Mailer Solutions</option>
-                    <option>Custom Napkins</option>
-                    <option>Bulk Print Order</option>
-                    <option>Other Enquiry</option>
-                  </select>
-                </div>
-
-                <div className="space-y-2">
-                  <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Project Brief</label>
-                  <textarea
-                    rows={4}
-                    placeholder="Tell us about your packaging dimensions and quantities..."
-                    className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none resize-none"
-                    required
-                    value={formData.brief}
-                    onChange={(e) => setFormData({ ...formData, brief: e.target.value })}
-                  />
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full py-6 bg-[#2E7D32] text-white rounded-[24px] font-bold text-lg hover:bg-[#25632a] hover:shadow-2xl hover:shadow-[#2E7D32]/20 transition-all active:scale-[0.98] flex items-center justify-center gap-3"
+                <form
+                  className="space-y-6"
+                  onSubmit={handleFormSubmit}
                 >
-                  <Send size={20} />
-                  Send to Specialist
-                </button>
-              </form>
-            </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Full Name</label>
+                      <input
+                        type="text"
+                        placeholder="e.g. NAME"
+                        className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
+                        required
+                        value={formData.fullName}
+                        onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                      />
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Company Name</label>
+                      <input
+                        type="text"
+                        placeholder="Your brand name"
+                        className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
+                        value={formData.companyName}
+                        onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
+                      />
+                    </div>
+                  </div>
+
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Subject Requirement</label>
+                    <select
+                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none appearance-none cursor-pointer"
+                      value={formData.subject}
+                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
+                    >
+                      <option>Kraft Paper Bags</option>
+                      <option>Packaging Boxes</option>
+                      <option>Mailer Solutions</option>
+                      <option>Custom Napkins</option>
+                      <option>Bulk Print Order</option>
+                      <option>Other Enquiry</option>
+                    </select>
+                  </div>
+
+                  <div className="space-y-2">
+                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Project Brief</label>
+                    <textarea
+                      rows={4}
+                      placeholder="Tell us about your packaging dimensions and quantities..."
+                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none resize-none"
+                      required
+                      value={formData.brief}
+                      onChange={(e) => setFormData({ ...formData, brief: e.target.value })}
+                    />
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full py-6 bg-[#2E7D32] text-white rounded-[24px] font-bold text-lg hover:bg-[#25632a] hover:shadow-2xl hover:shadow-[#2E7D32]/20 transition-all active:scale-[0.98] flex items-center justify-center gap-3"
+                  >
+                    <Send size={20} />
+                    Send to Specialist
+                  </button>
+                </form>
+              </div>
+            </ScrollReveal>
 
             {/* Interactive Hours Side */}
-            <div className="relative group">
-              <div className="absolute -inset-4 bg-[#7CB342]/10 rounded-[48px] -rotate-2 blur-sm -z-10 group-hover:rotate-0 transition-transform duration-700" />
-              <div className="bg-[#1A3C1C] rounded-[48px] p-12 md:p-16 text-white space-y-12 shadow-2xl relative overflow-hidden">
-                {/* Background Decor */}
-                <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-[80px] -mr-32 -mt-32" />
+            <ScrollReveal delay={0.2}>
+              <div className="relative group">
+                <div className="absolute -inset-4 bg-[#7CB342]/10 rounded-[48px] -rotate-2 blur-sm -z-10 group-hover:rotate-0 transition-transform duration-700" />
+                <div className="bg-[#1A3C1C] rounded-[32px] md:rounded-[48px] p-8 md:p-16 text-white space-y-12 shadow-2xl relative overflow-hidden">
+                  {/* Background Decor */}
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-[80px] -mr-32 -mt-32" />
 
-                <div className="space-y-6">
-                  <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-[#7CB342]">
-                    <Clock size={32} />
-                  </div>
-                  <h3 className="text-4xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>Business Hours</h3>
-                  <p className="text-white/60 font-light">Our Hyderabad office operates during these hours for consultations.</p>
-                </div>
-
-                <div className="space-y-6">
-                  {[
-                    { day: 'Monday - Friday', hours: '9:00 AM - 6:00 PM IST', active: true },
-                    { day: 'Saturday', hours: '10:00 AM - 4:00 PM IST', active: true },
-                    { day: 'Sunday', hours: 'Closed', active: false },
-                  ].map((time, i) => (
-                    <div key={i} className={`flex justify-between items-center p-6 rounded-2xl border transition-colors ${time.active ? 'bg-white/5 border-white/10' : 'bg-transparent border-white/5 opacity-50'}`}>
-                      <span className="font-bold">{time.day}</span>
-                      <span className="text-white/60 font-light text-sm">{time.hours}</span>
+                  <div className="space-y-6">
+                    <div className="w-16 h-16 bg-white/10 rounded-2xl flex items-center justify-center text-[#7CB342]">
+                      <Clock size={32} />
                     </div>
-                  ))}
-                </div>
+                    <h3 className="text-4xl font-serif text-white" style={{ fontFamily: 'Georgia, serif' }}>Business Hours</h3>
+                    <p className="text-white font-light">Our Hyderabad office operates during these hours for consultations.</p>
+                  </div>
 
-                <div className="flex items-center gap-4 text-[#7CB342] text-sm font-bold uppercase tracking-widest pt-4 border-t border-white/5">
-                  <ShieldCheck size={18} />
-                  24/7 WhatsApp Response
+                  <div className="space-y-6">
+                    {[
+                      { day: 'Monday - Friday', hours: '9:00 AM - 6:00 PM IST', active: true },
+                      { day: 'Saturday', hours: '10:00 AM - 4:00 PM IST', active: true },
+                      { day: 'Sunday', hours: 'Closed', active: false },
+                    ].map((time, i) => (
+                      <div key={i} className={`flex justify-between items-center p-6 rounded-2xl border transition-colors ${time.active ? 'bg-white/5 border-white/10' : 'bg-transparent border-white/10 opacity-70'}`}>
+                        <span className="font-bold text-white">{time.day}</span>
+                        <span className="text-white font-light text-sm">{time.hours}</span>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="flex items-center gap-4 text-white text-sm font-bold uppercase tracking-widest pt-4 border-t border-white/10">
+                    <ShieldCheck size={18} className="text-[#7CB342]" />
+                    Fast Response                  </div>
                 </div>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </section>
 
       {/* Premium FAQ Section */}
-      <section className="py-24 md:py-32 bg-[#F9F9F4]">
+      <section className="py-16 md:py-32 bg-[#F9F9F4]">
         <div className="container max-w-7xl mx-auto px-6">
-          <div className="text-center space-y-6 mb-20">
-            <h2 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>
-              Common <span className="text-[#2E7D32]">Questions</span>
-            </h2>
-            <div className="w-24 h-1 bg-[#2E7D32]/20 mx-auto rounded-full" />
-          </div>
+          <ScrollReveal>
+            <div className="text-center space-y-6 mb-20">
+              <h2 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>
+                Common <span className="text-[#2E7D32]">Questions</span>
+              </h2>
+              <div className="w-24 h-1 bg-[#2E7D32]/20 mx-auto rounded-full" />
+            </div>
+          </ScrollReveal>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
@@ -258,56 +270,62 @@ Please let me know the next steps.`;
               { q: 'Do you offer production samples?', a: 'We provide digital proofs for all orders and physical samples for large-scale custom productions.' },
               { q: 'What payment methods do you accept?', a: 'We offer secure bank transfers, UPI, and major business credit/debit facility options.' },
             ].map((faq, i) => (
-              <div key={i} className="bg-white p-10 rounded-[32px] border border-[#E8E8E3] space-y-4 hover:border-[#2E7D32]/20 transition-all duration-300 shadow-sm hover:shadow-md">
-                <h4 className="text-xl font-bold flex items-start gap-3">
-                  <span className="text-[#2E7D32] mt-1 italic font-serif">Q.</span>
-                  {faq.q}
-                </h4>
-                <p className="text-[#6B6B6B] leading-relaxed font-light pl-8 border-l border-[#F0F0E8]">
-                  {faq.a}
-                </p>
-              </div>
+              <ScrollReveal key={i} delay={i * 0.1}>
+                <div className="bg-white p-6 md:p-10 rounded-[24px] md:rounded-[32px] border border-[#E8E8E3] space-y-4 hover:border-[#2E7D32]/20 transition-all duration-300 shadow-sm hover:shadow-md h-full">
+                  <h4 className="text-xl font-bold flex items-start gap-3">
+                    <span className="text-[#2E7D32] mt-1 italic font-serif">Q.</span>
+                    {faq.q}
+                  </h4>
+                  <p className="text-[#6B6B6B] leading-relaxed font-light pl-8 border-l border-[#F0F0E8]">
+                    {faq.a}
+                  </p>
+                </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>
       </section>
 
       {/* Global Brand Final CTA */}
-      <section className="py-24 md:py-32 relative overflow-hidden bg-[#2E7D32] z-10 text-white">
-        {/* Background Decorations */}
-        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/5 rounded-full blur-[150px] -mr-64 -mt-64 z-0" />
+      <ScrollReveal>
+        <section className="py-16 md:py-32 relative overflow-hidden bg-[#2E7D32] z-10 text-white">
+          {/* Background Decorations */}
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/5 rounded-full blur-[150px] -mr-64 -mt-64 z-0" />
 
-        <div className="container max-w-4xl mx-auto px-6 text-center space-y-12 relative z-10">
-          <div className="space-y-6">
-            <h2 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>
-              Ready for a <br />
-              <span className="text-[#7CB342]">Sustainable Switch?</span>
-            </h2>
-            <p className="text-white/80 text-xl font-light max-w-2xl mx-auto leading-relaxed">
-              Transitioning to eco-packaging is easier than you think. Let's build a greener future for your brand together.
-            </p>
+          <div className="container max-w-4xl mx-auto px-6 text-center space-y-12 relative z-10">
+            <div className="space-y-6">
+              <h2 className="text-4xl md:text-6xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>
+                Ready for a <br />
+                <span className="text-[#7CB342]">Sustainable Switch?</span>
+              </h2>
+              <p className="text-white/80 text-xl font-light max-w-2xl mx-auto leading-relaxed">
+                Transitioning to eco-packaging is easier than you think. Let's build a greener future for your brand together.
+              </p>
+            </div>
+
+            <div className="flex flex-col sm:flex-row gap-6 justify-center">
+              <button
+                onClick={handleWhatsApp}
+                className="px-12 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
+              >
+                <MessageCircle size={22} />
+                Book an Order
+              </button>
+              <button
+                onClick={handleCall}
+                className="px-12 py-5 bg-transparent text-white border-2 border-white/20 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+              >
+                <Phone size={22} />
+                Speak to Us
+              </button>
+            </div>
           </div>
+        </section>
+      </ScrollReveal>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button
-              onClick={handleWhatsApp}
-              className="px-12 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
-            >
-              <MessageCircle size={22} />
-              Book an Order
-            </button>
-            <button
-              onClick={handleCall}
-              className="px-12 py-5 bg-transparent text-white border-2 border-white/20 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
-            >
-              <Phone size={22} />
-              Speak to Us
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <FooterSection />
+      <ScrollReveal>
+        <FooterSection />
+      </ScrollReveal>
     </main>
   );
 }
