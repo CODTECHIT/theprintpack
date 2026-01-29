@@ -27,15 +27,15 @@ export function HeroSection() {
   } as const
 
   return (
-    <section className="relative overflow-hidden pt-20 pb-10 md:pt-28 md:pb-12 px-4" style={{ background: 'linear-gradient(to bottom, #F5F5F0, var(--background), rgba(232, 232, 227, 0.2))' }}>
-      {/* Decorative leaf elements */}
+    <section className="relative overflow-hidden pt-24 pb-12 md:pt-32 md:pb-20 px-4" style={{ background: 'linear-gradient(to bottom, #F5F5F0, var(--background), rgba(232, 232, 227, 0.2))' }}>
+      {/* Decorative leaf elements - now partially visible on mobile for more character */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 0.15, scale: 1 }}
+        animate={{ opacity: 0.1, scale: 1 }}
         transition={{ duration: 1.5, ease: "easeOut" }}
-        className="hidden md:block absolute top-20 right-10 pointer-events-none"
+        className="absolute top-10 -right-10 md:top-20 md:right-10 pointer-events-none"
       >
-        <svg width="200" height="200" viewBox="0 0 200 200" style={{ color: '#2E7D32' }}>
+        <svg viewBox="0 0 200 200" className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]" style={{ color: '#2E7D32' }}>
           <path fill="currentColor" d="M100 10 Q150 50 180 100 Q150 120 100 150 Q50 120 20 100 Q50 50 100 10" opacity="0.5" />
         </svg>
       </motion.div>
@@ -44,53 +44,59 @@ export function HeroSection() {
         initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
         animate={{ opacity: 0.05, scale: 1, rotate: 0 }}
         transition={{ duration: 2, ease: "easeOut" }}
-        className="hidden md:block absolute bottom-0 left-5 pointer-events-none"
+        className="absolute bottom-5 -left-10 md:bottom-0 md:left-5 pointer-events-none"
       >
-        <svg width="300" height="300" viewBox="0 0 200 200" style={{ color: '#2E7D32' }}>
+        <svg viewBox="0 0 200 200" className="w-[200px] h-[200px] md:w-[300px] md:h-[300px]" style={{ color: '#2E7D32' }}>
           <path fill="currentColor" d="M100 10 Q150 50 180 100 Q150 120 100 150 Q50 120 20 100 Q50 50 100 10" opacity="0.5" />
         </svg>
       </motion.div>
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16 xl:gap-24 items-center"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {/* Text Content */}
-          <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left items-center md:items-start max-w-full md:pr-10 lg:pr-16">
-            <div className="space-y-4 w-full">
+          <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left items-center md:items-start max-w-full order-1 md:order-none">
+            <div className="space-y-4 md:space-y-6 w-full">
+              <motion.div variants={itemVariants} className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#2E7D32]/10 border border-[#2E7D32]/20 mb-2">
+                <span className="w-2 h-2 rounded-full bg-[#2E7D32] animate-pulse"></span>
+                <span className="text-xs md:text-sm font-medium text-[#2E7D32] uppercase tracking-wider">Premium Sustainable Solutions</span>
+              </motion.div>
+
               <motion.h1
                 variants={itemVariants}
-                className="text-[2rem] sm:text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-[1.1] tracking-tight px-2 md:px-0 flex flex-col items-center md:items-start"
+                className="text-[2.1rem] sm:text-5xl md:text-4xl lg:text-5xl xl:text-7xl font-bold leading-[1.15] tracking-tight flex flex-col items-center md:items-start"
                 style={{ color: '#2B2B2B' }}
               >
-                <span className="block mb-1 sm:mb-0">Sustainable Packaging.</span>
+                <span className="block">Sustainable Packaging.</span>
                 <span className="text-[#2E7D32] block">Printed for Your Brand.</span>
-                <span className="block mt-6 md:mt-4 text-[1.5rem] sm:text-2xl md:text-2xl lg:text-3xl font-serif italic" style={{ fontFamily: 'Georgia, serif' }}>
+                <span className="block mt-6 md:mt-4 text-xl sm:text-2xl font-serif italic" style={{ fontFamily: 'Georgia, serif' }}>
                   <span style={{ color: '#2B2B2B' }}>—</span> <span className="text-[#2E7D32]">The Print Pack</span>
                 </span>
               </motion.h1>
+
               <motion.p
                 variants={itemVariants}
-                className="text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto md:mx-0 px-4 md:px-0"
+                className="text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto md:mx-0 text-balance"
                 style={{ color: '#6B6B6B' }}
               >
-                Eco-friendly print-on-demand packaging solutions crafted in Hyderabad. Replace plastic with beautiful, sustainable materials.
+                Eco-friendly print-on-demand packaging solutions crafted in Hyderabad. Replace plastic with beautiful, sustainable materials that reflect your brand's values.
               </motion.p>
             </div>
 
             {/* CTA Buttons */}
             <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start w-full md:w-auto">
               <a href="https://wa.me/917674062263?text=Hello!%20I%20need%20your%20services." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button className="w-full h-12 px-6 text-white rounded-lg text-base font-semibold flex items-center justify-center gap-2 transition-all duration-200 hover:shadow-lg" style={{ backgroundColor: '#2E7D32' }}>
+                <Button className="w-full h-14 md:h-12 px-8 text-white rounded-xl text-base font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-95" style={{ backgroundColor: '#2E7D32' }}>
                   <MessageCircle size={20} />
                   Chat on WhatsApp
                 </Button>
               </a>
               <a href="tel:7674062263" className="w-full sm:w-auto">
-                <Button variant="outline" className="w-full h-12 px-6 border-2 rounded-lg text-base font-semibold flex items-center justify-center gap-2 transition-all duration-200 bg-transparent" style={{ borderColor: '#2E7D32', color: '#2E7D32' }}>
+                <Button variant="outline" className="w-full h-14 md:h-12 px-8 border-2 rounded-xl text-base font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:bg-[#2E7D32]/5 hover:scale-[1.02] active:scale-95 bg-transparent" style={{ borderColor: '#2E7D32', color: '#2E7D32' }}>
                   <Phone size={20} />
                   Call Us
                 </Button>
@@ -101,39 +107,46 @@ export function HeroSection() {
           {/* Right: Image */}
           <motion.div
             variants={itemVariants}
-            className="relative h-[300px] md:h-[500px] w-full rounded-2xl overflow-hidden shadow-2xl"
+            className="relative h-[280px] sm:h-[350px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl group order-none md:order-1"
           >
             <Image
               src="/hero-packaging.jpg"
               alt="Eco-friendly packaging solutions with sustainable materials"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-700 group-hover:scale-110"
               priority
               sizes="(max-width: 768px) 100vw, 50vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+
+            {/* Overlay tag for mobile */}
+            <div className="absolute bottom-4 left-4 right-4 md:hidden flex justify-center">
+              <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
+                <p className="text-xs font-semibold text-[#2E7D32]">Hyderabad Based • Eco Friendly</p>
+              </div>
+            </div>
           </motion.div>
         </motion.div>
 
-        {/* Trust indicators */}
+        {/* Trust indicators - Optimized for mobile */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.2, duration: 1 }}
-          className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 pt-6 md:pt-8 border-t"
+          transition={{ delay: 1, duration: 0.8 }}
+          className="mt-12 md:mt-16 flex flex-wrap md:grid md:grid-cols-3 gap-6 md:gap-8 pt-8 md:pt-10 border-t justify-center items-center"
           style={{ borderColor: '#E8E8E3' }}
         >
-          <div className="text-center space-y-2">
-            <p className="text-2xl md:text-3xl font-bold" style={{ color: '#2E7D32' }}>100%</p>
-            <p className="text-sm md:text-base" style={{ color: '#6B6B6B' }}>Eco Materials</p>
+          <div className="w-[45%] md:w-auto text-center space-y-1 md:space-y-2">
+            <p className="text-2xl md:text-4xl font-bold" style={{ color: '#2E7D32' }}>100%</p>
+            <p className="text-xs md:text-base font-medium" style={{ color: '#6B6B6B' }}>Eco Materials</p>
           </div>
-          <div className="text-center space-y-2">
-            <p className="text-2xl md:text-3xl font-bold" style={{ color: '#7CB342' }}>Custom</p>
-            <p className="text-sm md:text-base" style={{ color: '#6B6B6B' }}>Printing</p>
+          <div className="w-[45%] md:w-auto text-center space-y-1 md:space-y-2">
+            <p className="text-2xl md:text-4xl font-bold" style={{ color: '#7CB342' }}>Custom</p>
+            <p className="text-xs md:text-base font-medium" style={{ color: '#6B6B6B' }}>Printing</p>
           </div>
-          <div className="text-center space-y-2">
-            <p className="text-2xl md:text-3xl font-bold" style={{ color: '#A47551' }}>Fast</p>
-            <p className="text-sm md:text-base" style={{ color: '#6B6B6B' }}>Turnaround</p>
+          <div className="w-full md:w-auto text-center space-y-1 md:space-y-2 pt-2 md:pt-0">
+            <p className="text-2xl md:text-4xl font-bold" style={{ color: '#A47551' }}>Fast</p>
+            <p className="text-xs md:text-base font-medium" style={{ color: '#6B6B6B' }}>Turnaround</p>
           </div>
         </motion.div>
       </div>
