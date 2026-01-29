@@ -32,7 +32,7 @@ Please let me know the next steps.`;
     };
 
     return (
-        <section className="py-16 md:py-24 px-4 md:px-6 relative overflow-hidden bg-[#F5F5F0]">
+        <section className="py-10 md:py-24 px-4 md:px-6 relative overflow-hidden bg-[#F5F5F0]">
             {/* Subtle Background Decoration */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#2E7D32]/5 rounded-full blur-[100px] -mr-64 -mt-64" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#A47551]/5 rounded-full blur-[100px] -ml-64 -mb-64" />

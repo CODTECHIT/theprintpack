@@ -15,7 +15,7 @@ export default function Vision() {
             <Navigation />
 
             {/* Very Minimal Vision Page */}
-            <div className="pt-28 pb-12 md:pt-40 md:pb-20 container max-w-4xl mx-auto px-6 space-y-16 md:space-y-24">
+            <div className="pt-24 pb-8 md:pt-40 md:pb-20 container max-w-4xl mx-auto px-6 space-y-12 md:space-y-24">
 
                 {/* Title Section */}
                 <div className="flex flex-col lg:flex-row gap-16 items-start lg:items-center">
