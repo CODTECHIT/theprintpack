@@ -17,7 +17,7 @@ export default function About() {
       <Navigation />
 
       {/* Premium Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden">
+      <section className="relative flex items-center justify-center pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden">
         {/* Background Overlay with Gradient */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -58,7 +58,7 @@ export default function About() {
       </ScrollReveal>
 
       {/* Enhanced Core Values Section */}
-      <section className="py-12 md:py-20 lg:py-32 relative overflow-hidden bg-white">
+      <section className="py-10 md:py-16 lg:py-24 relative overflow-hidden bg-white">
         <div className="container max-w-7xl mx-auto px-6 relative z-10">
           <ScrollReveal>
             <div className="text-center space-y-4 mb-20">
@@ -117,7 +117,7 @@ export default function About() {
       </section>
 
       {/* Why Choose Us - Premium Features Grid */}
-      <section className="py-12 md:py-20 lg:py-32 bg-[#F9F9F4]">
+      <section className="py-10 md:py-16 lg:py-24 bg-[#F9F9F4]">
         <div className="container max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
             <ScrollReveal>
@@ -170,7 +170,7 @@ export default function About() {
 
       {/* Premium CTA Section */}
       <ScrollReveal>
-        <section className="py-12 md:py-20 lg:py-32 relative overflow-hidden bg-[#2E7D32] z-10 text-white">
+        <section className="py-10 md:py-16 lg:py-24 relative overflow-hidden bg-[#2E7D32] z-10 text-white">
           {/* Background Decorations */}
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/5 rounded-full blur-[150px] -mr-64 -mt-64 z-0" />
 

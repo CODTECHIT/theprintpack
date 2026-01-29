@@ -15,7 +15,7 @@ export default function Vision() {
             <Navigation />
 
             {/* Very Minimal Vision Page */}
-            <div className="pt-28 pb-12 md:pt-40 md:pb-20 container max-w-4xl mx-auto px-6 space-y-16 md:space-y-24">
+            <div className="pt-24 pb-10 md:pt-32 md:pb-16 container max-w-4xl mx-auto px-6 space-y-12 md:space-y-16">
 
                 {/* Title Section */}
                 <div className="flex flex-col lg:flex-row gap-16 items-start lg:items-center">
@@ -107,8 +107,8 @@ export default function Vision() {
 
                 {/* Minimal CTA */}
                 <ScrollReveal>
-                    <div className="pt-20 border-t border-[#E8E8E3]">
-                        <div className="bg-[#F9FAF5] rounded-[32px] md:rounded-[40px] p-8 md:p-16 flex flex-col md:flex-row items-center justify-between gap-8">
+                    <div className="pt-12 md:pt-16 border-t border-[#E8E8E3]">
+                        <div className="bg-[#F9FAF5] rounded-[32px] md:rounded-[40px] p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-8">
                             <div className="space-y-3 text-center md:text-left">
                                 <h3 className="text-3xl font-serif" style={{ fontFamily: 'Georgia, serif' }}>Ready to partner?</h3>
                                 <p className="text-[#6B6B6B] font-light">Let's discuss your brand's sustainable future.</p>
