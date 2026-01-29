@@ -70,7 +70,7 @@ export default function Services() {
       <Navigation />
 
       {/* Premium Hero Section */}
-      <section className="relative min-h-[40vh] md:min-h-[50vh] flex items-center justify-center pt-24 pb-12 md:pt-32 md:pb-20 overflow-hidden">
+      <section className="relative min-h-[50vh] flex items-center justify-center pt-28 pb-16 md:pt-32 md:pb-20 overflow-hidden">
         {/* Background Overlay */}
         <div className="absolute inset-0 z-0">
           <Image
@@ -105,7 +105,7 @@ export default function Services() {
 
       {/* Services Grid - More Dynamic */}
       {/* Services Grid - More Dynamic */}
-      <section className="py-12 md:py-32 relative z-10">
+      <section className="py-12 md:py-20 lg:py-32 relative z-10">
         <div className="container max-w-7xl mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {services.map((service, index) => (
@@ -170,7 +170,7 @@ export default function Services() {
       </section>
 
       {/* Premium Process Section */}
-      <section className="py-12 md:py-32 bg-white relative overflow-hidden">
+      <section className="py-12 md:py-20 lg:py-32 bg-white relative overflow-hidden">
         {/* Subtle Background Glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#2E7D32]/5 rounded-full blur-[120px] pointer-events-none" />
 
@@ -215,7 +215,7 @@ export default function Services() {
 
       {/* Premium CTA Section */}
       <ScrollReveal>
-        <section className="py-12 md:py-32 relative overflow-hidden bg-[#2E7D32] z-10 text-white">
+        <section className="py-12 md:py-20 lg:py-32 relative overflow-hidden bg-[#2E7D32] z-10 text-white">
           {/* Background Decorations */}
           <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-white/5 rounded-full blur-[150px] -mr-64 -mt-64 z-0" />
           <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-white/5 rounded-full blur-[100px] -ml-32 -mb-32 z-0" />

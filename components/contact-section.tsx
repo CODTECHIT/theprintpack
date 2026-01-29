@@ -32,14 +32,14 @@ Please let me know the next steps.`;
     };
 
     return (
-        <section className="py-10 md:py-24 px-4 md:px-6 relative overflow-hidden bg-[#F5F5F0]">
+        <section className="py-12 md:py-16 lg:py-24 px-4 md:px-6 relative overflow-hidden bg-[#F5F5F0]">
             {/* Subtle Background Decoration */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#2E7D32]/5 rounded-full blur-[100px] -mr-64 -mt-64" />
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#A47551]/5 rounded-full blur-[100px] -ml-64 -mb-64" />
 
-            <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 items-center relative z-10">
+            <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 lg:gap-16 items-center relative z-10">
                 {/* Left Side: Text and Contact Info */}
-                <div className="md:w-1/2 space-y-12">
+                <div className="md:w-1/2 space-y-8 md:space-y-12">
                     <div className="space-y-6">
                         <h2 className="text-5xl md:text-6xl font-serif text-[#2B2B2B] leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
                             Get In Touch

@@ -39,14 +39,14 @@ export function ServicesSection() {
   }
 
   return (
-    <section className="py-10 md:py-32 bg-[#F9F9F4] relative overflow-hidden">
+    <section className="py-12 md:py-16 lg:py-24 bg-[#F9F9F4] relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#2E7D32]/5 rounded-full blur-3xl -mr-48 -mt-48" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#A47551]/5 rounded-full blur-3xl -ml-48 -mb-48" />
 
       <div className="container max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center space-y-6 mb-8 md:mb-20">
+        <div className="text-center space-y-6 mb-20">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm border border-[#2E7D32]/10 text-[#2E7D32] shadow-sm">
             <Leaf size={18} className="animate-pulse" />
             <span className="text-xs font-bold uppercase tracking-widest">Premium Collection</span>
@@ -109,7 +109,7 @@ export function ServicesSection() {
         </div>
 
         {/* Premium Highlights */}
-        <div className="mt-12 md:mt-24 pt-10 md:pt-16 border-t border-[#E8E8E3]">
+        <div className="mt-12 md:mt-16 pt-10 md:pt-12 border-t border-[#E8E8E3]">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {[
               { label: 'Eco Materials', value: '100%', color: '#2E7D32', sub: 'Biodegradable & Recyclable' },

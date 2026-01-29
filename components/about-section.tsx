@@ -3,7 +3,7 @@ import { Leaf } from 'lucide-react'
 
 export function AboutSection() {
   return (
-    <section className="pt-6 pb-8 md:py-24 overflow-hidden relative" style={{ backgroundColor: '#F5F5F0' }}>
+    <section className="py-12 md:py-16 lg:py-24 overflow-hidden relative" style={{ backgroundColor: '#F5F5F0' }}>
       {/* Decorative leaf backgrounds */}
       <div className="absolute top-10 -right-20 opacity-5 pointer-events-none animate-leaf">
         <Leaf size={400} strokeWidth={0.5} style={{ color: '#2E7D32' }} />
@@ -20,7 +20,7 @@ export function AboutSection() {
       </div>
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image Column */}
           <div className="relative group">
             {/* Decorative element */}
