@@ -63,12 +63,12 @@ export function HeroSection() {
             <div className="space-y-4">
               <motion.h1
                 variants={itemVariants}
-                className="text-3xl sm:text-5xl md:text-7xl font-bold leading-[1.2] tracking-tight px-2 flex flex-col items-center"
+                className="text-[1.85rem] leading-[1.1] sm:text-5xl md:text-7xl font-bold tracking-tight px-2 flex flex-col items-center"
                 style={{ color: '#2B2B2B' }}
               >
-                <span className="block mb-2 sm:mb-0">Sustainable Packaging.</span>
-                <span className="text-[#2E7D32] block">Printed for Your Brand.</span>
-                <span className="block mt-8 text-2xl sm:text-3xl font-serif italic" style={{ fontFamily: 'Georgia, serif', color: '#2B2B2B' }}>
+                <span className="block mb-1 sm:mb-0 text-nowrap">Sustainable Packaging.</span>
+                <span className="text-[#2E7D32] block text-nowrap">Printed for Your Brand.</span>
+                <span className="block mt-6 text-xl sm:text-3xl font-serif italic text-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#2B2B2B' }}>
                   — <span className="text-[#2E7D32]">The Print Pack</span>
                 </span>
               </motion.h1>
