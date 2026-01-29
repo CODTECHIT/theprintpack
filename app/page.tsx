@@ -6,7 +6,6 @@ import { HeroSection } from '@/components/hero-section';
 import { ServicesSection } from '@/components/services-section';
 import { ContactSection } from '@/components/contact-section';
 import { FooterSection } from '@/components/footer-section';
-import { FloatingActionButton } from '@/components/floating-action-button';
 import { ScrollReveal } from '@/components/scroll-reveal';
 
 
@@ -31,8 +30,6 @@ export default function Home() {
       <ScrollReveal>
         <FooterSection />
       </ScrollReveal>
-
-      <FloatingActionButton />
     </main>
   );
 }
