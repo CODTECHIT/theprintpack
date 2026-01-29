@@ -58,39 +58,39 @@ export function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          {/* Center: Text Content */}
-          <div className="flex flex-col gap-6 md:gap-8 text-center">
+          {/* Text Content */}
+          <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left items-center md:items-start">
             <div className="space-y-4">
               <motion.h1
                 variants={itemVariants}
-                className="text-[1.85rem] leading-[1.1] sm:text-5xl md:text-7xl font-bold tracking-tight px-2 flex flex-col items-center"
+                className="text-[1.85rem] leading-[1.1] sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight px-2 md:px-0 flex flex-col items-center md:items-start"
                 style={{ color: '#2B2B2B' }}
               >
-                <span className="block mb-1 sm:mb-0 text-nowrap">Sustainable Packaging.</span>
-                <span className="text-[#2E7D32] block text-nowrap">Printed for Your Brand.</span>
-                <span className="block mt-6 text-xl sm:text-3xl font-serif italic text-nowrap" style={{ fontFamily: 'Georgia, serif', color: '#2B2B2B' }}>
-                  — <span className="text-[#2E7D32]">The Print Pack</span>
+                <span className="block mb-1 sm:mb-0 md:text-nowrap">Sustainable Packaging.</span>
+                <span className="text-[#2E7D32] block md:text-nowrap">Printed for Your Brand.</span>
+                <span className="block mt-6 md:mt-4 text-xl sm:text-2xl font-serif italic" style={{ fontFamily: 'Georgia, serif' }}>
+                  <span style={{ color: '#2B2B2B' }}>—</span> <span className="text-[#2E7D32]">The Print Pack</span>
                 </span>
               </motion.h1>
               <motion.p
                 variants={itemVariants}
-                className="text-base sm:text-xl leading-relaxed max-w-2xl mx-auto px-4"
+                className="text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto md:mx-0 px-4 md:px-0"
                 style={{ color: '#6B6B6B' }}
               >
                 Eco-friendly print-on-demand packaging solutions crafted in Hyderabad. Replace plastic with beautiful, sustainable materials.
               </motion.p>
             </div>
 
-            {/* CTA Buttons - Centered */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="https://wa.me/917674062263?text=Hello!%20I%20need%20your%20services." target="_blank" rel="noopener noreferrer">
-                <Button className="w-full sm:w-auto h-12 px-6 text-white rounded-lg text-base font-semibold flex items-center justify-center gap-2 transition-all duration-200 hover:shadow-lg" style={{ backgroundColor: '#2E7D32' }}>
+            {/* CTA Buttons */}
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start w-full md:w-auto">
+              <a href="https://wa.me/917674062263?text=Hello!%20I%20need%20your%20services." target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+                <Button className="w-full h-12 px-6 text-white rounded-lg text-base font-semibold flex items-center justify-center gap-2 transition-all duration-200 hover:shadow-lg" style={{ backgroundColor: '#2E7D32' }}>
                   <MessageCircle size={20} />
                   Chat on WhatsApp
                 </Button>
               </a>
-              <a href="tel:7674062263">
-                <Button variant="outline" className="w-full sm:w-auto h-12 px-6 border-2 rounded-lg text-base font-semibold flex items-center justify-center gap-2 transition-all duration-200 bg-transparent" style={{ borderColor: '#2E7D32', color: '#2E7D32' }}>
+              <a href="tel:7674062263" className="w-full sm:w-auto">
+                <Button variant="outline" className="w-full h-12 px-6 border-2 rounded-lg text-base font-semibold flex items-center justify-center gap-2 transition-all duration-200 bg-transparent" style={{ borderColor: '#2E7D32', color: '#2E7D32' }}>
                   <Phone size={20} />
                   Call Us
                 </Button>
