@@ -3,7 +3,7 @@ import { Leaf } from 'lucide-react'
 
 export function AboutSection() {
   return (
-    <section className="py-12 md:py-16 lg:py-24 overflow-hidden relative" style={{ backgroundColor: '#F5F5F0' }}>
+    <section className="py-10 md:py-12 lg:py-20 overflow-hidden relative" style={{ backgroundColor: '#F5F5F0' }}>
       {/* Decorative leaf backgrounds */}
       <div className="absolute top-10 -right-20 opacity-5 pointer-events-none animate-leaf">
         <Leaf size={400} strokeWidth={0.5} style={{ color: '#2E7D32' }} />

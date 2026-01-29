@@ -27,7 +27,7 @@ export function HeroSection() {
   } as const
 
   return (
-    <section className="min-h-[85vh] flex items-center justify-center relative overflow-hidden pt-24 pb-12 md:pt-32 md:pb-16" style={{ background: 'linear-gradient(to bottom, #F5F5F0, var(--background), rgba(232, 232, 227, 0.2))' }}>
+    <section className="relative overflow-hidden pt-20 pb-10 md:pt-28 md:pb-12 px-4" style={{ background: 'linear-gradient(to bottom, #F5F5F0, var(--background), rgba(232, 232, 227, 0.2))' }}>
       {/* Decorative leaf elements */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
@@ -113,7 +113,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 1 }}
-          className="mt-12 md:mt-16 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 pt-8 md:pt-10 border-t"
+          className="mt-8 md:mt-12 grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 pt-6 md:pt-8 border-t"
           style={{ borderColor: '#E8E8E3' }}
         >
           <div className="text-center space-y-2">
