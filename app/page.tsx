@@ -16,15 +16,15 @@ export default function Home() {
       <Navigation />
       <HeroSection />
 
-      <ScrollReveal>
+      <ScrollReveal direction="left">
         <AboutSection />
       </ScrollReveal>
 
-      <ScrollReveal>
+      <ScrollReveal direction="right">
         <ServicesSection />
       </ScrollReveal>
 
-      <ScrollReveal>
+      <ScrollReveal direction="up">
         <ContactSection />
       </ScrollReveal>
 
