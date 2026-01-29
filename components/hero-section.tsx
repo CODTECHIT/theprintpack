@@ -58,8 +58,8 @@ export function HeroSection() {
           initial="hidden"
           animate="visible"
         >
-          {/* Left: Text Content */}
-          <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left">
+          {/* Center: Text Content */}
+          <div className="flex flex-col gap-6 md:gap-8 text-center">
             <div className="space-y-4">
               <motion.h1
                 variants={itemVariants}
@@ -69,21 +69,21 @@ export function HeroSection() {
                 Sustainable Packaging.
                 <br />
                 <span className="text-[#2E7D32]">Printed for Your Brand.</span>
-                <span className="block mt-4 text-sm sm:text-xl font-serif italic text-gray-500" style={{ fontFamily: 'Georgia, serif' }}>
-                  — <span className="text-[#2E7D32] border-b border-[#2E7D32]/20 pb-0.5">The Print Pack</span>
+                <span className="block mt-6 text-2xl sm:text-3xl font-serif italic" style={{ fontFamily: 'Georgia, serif', color: '#2B2B2B' }}>
+                  — <span className="text-[#2E7D32]">The Print Pack</span>
                 </span>
               </motion.h1>
               <motion.p
                 variants={itemVariants}
-                className="text-sm sm:text-xl leading-relaxed max-w-xl mx-auto md:mx-0 px-4 sm:px-0"
+                className="text-base sm:text-xl leading-relaxed max-w-2xl mx-auto px-4"
                 style={{ color: '#6B6B6B' }}
               >
                 Eco-friendly print-on-demand packaging solutions crafted in Hyderabad. Replace plastic with beautiful, sustainable materials.
               </motion.p>
             </div>
 
-            {/* CTA Buttons */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4">
+            {/* CTA Buttons - Centered */}
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="https://wa.me/917674062263?text=Hello!%20I%20need%20your%20services." target="_blank" rel="noopener noreferrer">
                 <Button className="w-full sm:w-auto h-12 px-6 text-white rounded-lg text-base font-semibold flex items-center justify-center gap-2 transition-all duration-200 hover:shadow-lg" style={{ backgroundColor: '#2E7D32' }}>
                   <MessageCircle size={20} />
