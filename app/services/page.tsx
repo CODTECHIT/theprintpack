@@ -44,7 +44,7 @@ const services = [
   {
     title: 'Mailer Boxes',
     description: 'Eco-friendly mailer boxes that replace plastic while delivering a clean, branded unboxing experience.',
-    image: '/images/mailer-boxes-updated.png',
+    image: '/images/mailer-boxes-realistic.png',
     useCase: 'Ideal for e-commerce, D2C brands, and online retailers.',
     features: [
       'Lightweight and durable for shipping',
@@ -55,7 +55,7 @@ const services = [
   {
     title: 'Cardboard / Corrugated Boxes',
     description: 'Strong, recyclable corrugated boxes designed to protect products and elevate brand presentation.',
-    image: '/packaging-boxes.jpg',
+    image: '/images/corrugated-boxes-realistic.png',
     useCase: 'Built for e-commerce shipping, retail packaging, and logistics.',
     features: [
       'Multiple sizes and box styles available',
