@@ -125,7 +125,7 @@ export function HeroSection() {
             className="relative h-[280px] sm:h-[350px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl group order-none md:order-1"
           >
             <Image
-              src="/hero-packaging.jpg"
+              src="/hero-packaging-new.jpg"
               alt="Eco-friendly packaging solutions with sustainable materials"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-110"

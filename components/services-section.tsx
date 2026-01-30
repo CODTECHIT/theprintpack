@@ -38,9 +38,9 @@ const services = [
     ]
   },
   {
-    title: 'Mailer Bags',
-    description: 'Eco-friendly mailer bags that replace plastic while delivering a clean, branded unboxing experience.',
-    image: '/mailer-bags.jpg',
+    title: 'Mailer Boxes',
+    description: 'Eco-friendly mailer boxes that replace plastic while delivering a clean, branded unboxing experience.',
+    image: '/images/mailer-boxes-updated.png',
     useCase: 'Ideal for e-commerce, D2C brands, and online retailers.',
     features: [
       'Lightweight and durable for shipping',
