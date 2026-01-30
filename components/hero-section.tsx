@@ -53,42 +53,42 @@ export function HeroSection() {
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 lg:gap-24 items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {/* Text Content */}
-          <div className="flex flex-col gap-6 md:gap-8 text-center md:text-left items-center md:items-start max-w-full order-1 md:order-none">
-            <div className="space-y-4 md:space-y-6 w-full">
-              <motion.div variants={itemVariants} className="inline-flex flex-wrap justify-center md:justify-start items-center gap-2 px-4 py-1.5 rounded-full bg-[#2E7D32]/10 border border-[#2E7D32]/20 mb-2 max-w-full">
+          <div className="flex flex-col gap-6 lg:gap-8 text-center lg:text-left items-center lg:items-start max-w-full order-1 lg:order-none">
+            <div className="space-y-4 lg:space-y-6 w-full">
+              <motion.div variants={itemVariants} className="inline-flex flex-wrap justify-center lg:justify-start items-center gap-2 px-4 py-1.5 rounded-full bg-[#2E7D32]/10 border border-[#2E7D32]/20 mb-2 max-w-full">
                 <span className="w-2 h-2 rounded-full bg-[#2E7D32] animate-pulse shrink-0"></span>
-                <span className="text-[10px] sm:text-xs md:text-sm font-medium text-[#2E7D32] uppercase tracking-wide text-center md:text-left leading-tight">
+                <span className="text-[10px] sm:text-xs md:text-sm font-medium text-[#2E7D32] uppercase tracking-wide text-center lg:text-left leading-tight">
                   B2B | Eco-Friendly Packaging | Print-on-Demand
                 </span>
               </motion.div>
 
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight flex flex-col items-center md:items-start"
+                className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight flex flex-col items-center lg:items-start"
                 style={{ color: '#2B2B2B' }}
               >
                 <span className="block">Custom Eco-Friendly</span>
                 <span className="text-[#2E7D32] block">Packaging</span>
-                <span className="block mt-3 text-xl sm:text-2xl md:text-3xl font-serif italic text-center md:text-left text-[#4B4B4B]" style={{ fontFamily: 'Georgia, serif' }}>
+                <span className="block mt-3 text-xl sm:text-2xl md:text-3xl font-serif italic text-center lg:text-left text-[#4B4B4B]" style={{ fontFamily: 'Georgia, serif' }}>
                   Printed On-Demand for Your Brand
                 </span>
               </motion.h1>
 
               <motion.p
                 variants={itemVariants}
-                className="text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto md:mx-0 text-balance text-center md:text-left px-2 sm:px-0"
+                className="text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0 text-balance text-center lg:text-left px-2 sm:px-0"
                 style={{ color: '#6B6B6B' }}
               >
                 We help restaurants, D2C brands, retailers, and businesses get sustainably sourced packaging with their branding — without bulk manufacturing or waste.
               </motion.p>
 
-              <motion.ul variants={itemVariants} className="space-y-2 text-left w-fit mx-auto md:mx-0 max-w-md pl-2 sm:pl-0">
+              <motion.ul variants={itemVariants} className="space-y-2 text-left w-fit mx-auto lg:mx-0 max-w-md pl-2 sm:pl-0">
                 {[
                   "Eco-friendly materials",
                   "Custom logo printing",
@@ -104,7 +104,7 @@ export function HeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 justify-center md:justify-start w-full md:w-auto">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start w-full lg:w-auto">
               <a href="#quote" className="w-full sm:w-auto">
                 <Button className="w-full h-14 md:h-12 px-8 text-white rounded-xl text-base font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-95" style={{ backgroundColor: '#2E7D32' }}>
                   Request a Quote
@@ -122,7 +122,7 @@ export function HeroSection() {
           {/* Right: Image */}
           <motion.div
             variants={itemVariants}
-            className="relative h-[280px] sm:h-[350px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl group order-none md:order-1"
+            className="relative h-[280px] sm:h-[350px] md:h-[500px] w-full rounded-3xl overflow-hidden shadow-2xl group order-none lg:order-1"
           >
             <Image
               src="/hero-packaging-new.jpg"
@@ -135,7 +135,7 @@ export function HeroSection() {
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
 
             {/* Overlay tag for mobile */}
-            <div className="absolute bottom-4 left-4 right-4 md:hidden flex justify-center">
+            <div className="absolute bottom-4 left-4 right-4 lg:hidden flex justify-center">
               <div className="bg-white/90 backdrop-blur-sm px-4 py-2 rounded-full shadow-lg">
                 <p className="text-xs font-semibold text-[#2E7D32]">Hyderabad Based • Eco Friendly</p>
               </div>

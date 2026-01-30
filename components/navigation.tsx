@@ -23,7 +23,7 @@ export function Navigation() {
         </Link>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <Link href="/" className="text-sm font-medium text-[#2B2B2B] hover:text-[#2E7D32] transition-colors">
             Home
           </Link>
@@ -42,7 +42,7 @@ export function Navigation() {
         </div>
 
         {/* Desktop Action Buttons */}
-        <div className="hidden md:flex gap-4">
+        <div className="hidden lg:flex gap-4">
           <button
             onClick={handleWhatsApp}
             className="bg-[#2E7D32] text-white px-6 py-2 rounded-lg text-sm font-semibold hover:bg-[#25632a] transition-colors"
@@ -59,7 +59,7 @@ export function Navigation() {
 
         {/* Mobile Menu Toggle */}
         <button
-          className="md:hidden text-[#2B2B2B] p-2"
+          className="lg:hidden text-[#2B2B2B] p-2"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -68,7 +68,7 @@ export function Navigation() {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-xl md:hidden flex flex-col p-6 gap-6 animate-in slide-in-from-top-2 duration-300">
+        <div className="absolute top-full left-0 right-0 bg-white border-t border-gray-100 shadow-xl lg:hidden flex flex-col p-6 gap-6 animate-in slide-in-from-top-2 duration-300">
           <div className="flex flex-col gap-4">
             <Link
               href="/"

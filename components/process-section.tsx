@@ -34,9 +34,9 @@ export function ProcessSection() {
                 </div>
 
                 {/* Steps */}
-                <div className="relative grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 max-w-6xl mx-auto">
+                <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4 max-w-6xl mx-auto">
                     {/* Connecting Line (Desktop) */}
-                    <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-[#E8E8E3] to-transparent z-0"></div>
+                    <div className="hidden lg:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-[#E8E8E3] to-transparent z-0"></div>
 
                     {steps.map((step, index) => (
                         <div key={index} className="relative z-10 flex flex-col items-center text-center">

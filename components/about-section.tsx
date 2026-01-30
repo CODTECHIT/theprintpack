@@ -20,12 +20,12 @@ export function AboutSection() {
       </div>
 
       <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Column */}
           <div className="relative group">
             {/* Decorative element */}
-            <div className="absolute -top-6 -left-6 w-32 h-32 border-l-2 border-t-2 border-[#2E7D32]/20 hidden md:block" />
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r-2 border-b-2 border-[#A47551]/20 hidden md:block" />
+            <div className="absolute -top-6 -left-6 w-32 h-32 border-l-2 border-t-2 border-[#2E7D32]/20 hidden lg:block" />
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-r-2 border-b-2 border-[#A47551]/20 hidden lg:block" />
 
             <div className="relative h-[450px] md:h-[550px] w-full rounded-2xl overflow-hidden shadow-2xl animate-in fade-in slide-in-from-left-12 duration-500">
               <Image
@@ -40,7 +40,7 @@ export function AboutSection() {
             </div>
 
             {/* Floating Stat/Card */}
-            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl hidden md:flex items-center gap-4 animate-bounce-slow">
+            <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-xl shadow-xl hidden lg:flex items-center gap-4 animate-bounce-slow">
               <div className="w-12 h-12 bg-[#2E7D32]/10 rounded-full flex items-center justify-center text-[#2E7D32]">
                 <Leaf size={24} />
               </div>
