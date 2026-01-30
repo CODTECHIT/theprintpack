@@ -47,8 +47,8 @@ export default function About() {
             Driven by Quality.
           </h1>
 
-          <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto leading-relaxed font-light">
-            We are more than just a packaging company. We are partners in your brand's journey toward a greener, more responsible future.
+          <p className="text-xl text-[#4B4B4B] max-w-3xl mx-auto leading-[1.7] font-light">
+            We are more than just a packaging company. We help businesses replace plastic with eco-friendly, custom-printed packaging through a flexible print-on-demand model.
           </p>
         </div>
       </section>
@@ -74,14 +74,14 @@ export default function About() {
             {[
               {
                 icon: <Leaf size={32} />,
-                title: "Sustainability",
+                title: "Environmental Responsibility",
                 desc: "100% eco-friendly materials and carbon-conscious processes.",
                 bg: "bg-[#2E7D32]/5",
                 color: "text-[#2E7D32]"
               },
               {
                 icon: <Award size={32} />,
-                title: "Quality",
+                title: "Print & Material Excellence",
                 desc: "Premium finishes and high-resolution printing on every batch.",
                 bg: "bg-[#7CB342]/5",
                 color: "text-[#7CB342]"
@@ -107,7 +107,7 @@ export default function About() {
                     {value.icon}
                   </div>
                   <h3 className="text-2xl font-bold mb-4">{value.title}</h3>
-                  <p className="text-[#6B6B6B] leading-relaxed font-light">
+                  <p className="text-[#4B4B4B] leading-relaxed font-light">
                     {value.desc}
                   </p>
                 </div>
@@ -141,11 +141,11 @@ export default function About() {
                 className="px-10 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
               >
                 <Leaf size={22} />
-                Book an Order
+                Request a Quote
               </button>
               <button
                 onClick={handleCall}
-                className="px-10 py-5 bg-transparent text-white border-2 border-white/30 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+                className="px-10 py-5 bg-transparent text-white border-2 border-white/60 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
               >
                 Call Our Office
               </button>

@@ -13,7 +13,7 @@ export function FooterSection() {
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white">The Print Pack Company</h3>
             <div className="text-[#A0A0A0] text-sm leading-relaxed max-w-xs">
-              <p>Eco-Friendly Custom Packaging Solutions.</p>
+              <p>Custom Eco-Friendly Packaging</p>
               <p>Hyderabad, India.</p>
             </div>
           </div>

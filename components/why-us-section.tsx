@@ -45,7 +45,7 @@ export function WhyUsSection() {
                                     <reason.icon size={32} />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
-                                <p className="text-white/80 leading-relaxed">{reason.description}</p>
+                                <p className="text-white/90 leading-relaxed font-light">{reason.description}</p>
                             </div>
                         ))}
                     </div>

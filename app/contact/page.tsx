@@ -84,13 +84,13 @@ Quantity: ${formData.estimatedQuantity}`;
                 className="group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 cursor-pointer h-full"
               >
                 <div className="w-16 h-16 bg-[#F0F5F0] rounded-2xl flex items-center justify-center text-[#2E7D32] mx-auto group-hover:scale-110 group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-500">
-                  <MessageCircle size={28} />
+                  <MessageCircle size={32} />
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">WhatsApp</h3>
                   <p className="text-[#6B6B6B] font-light text-sm">Instant messaging support for quick queries.</p>
                 </div>
-                <p className="text-[#2E7D32] font-bold text-xs uppercase tracking-widest pt-2">Chat Now</p>
+                <p className="text-[#2E7D32] font-bold text-xs uppercase tracking-widest pt-2">CHAT NOW</p>
               </div>
             </ScrollReveal>
 
@@ -101,13 +101,13 @@ Quantity: ${formData.estimatedQuantity}`;
                 className="block group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 cursor-pointer h-full"
               >
                 <div className="w-16 h-16 bg-[#F0F5F0] rounded-2xl flex items-center justify-center text-[#2E7D32] mx-auto group-hover:scale-110 group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-500">
-                  <Mail size={28} />
+                  <Mail size={32} />
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Email Us</h3>
                   <p className="text-[#6B6B6B] font-light text-sm break-all">Charansaireddychintakunta@gmail.com</p>
                 </div>
-                <p className="text-[#2E7D32] font-bold text-xs uppercase tracking-widest pt-2">Send Mail</p>
+                <p className="text-[#2E7D32] font-bold text-xs uppercase tracking-widest pt-2">SEND MAIL</p>
               </a>
             </ScrollReveal>
 
@@ -118,13 +118,13 @@ Quantity: ${formData.estimatedQuantity}`;
                 className="group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7CB342]/10 hover:-translate-y-2 cursor-pointer h-full"
               >
                 <div className="w-16 h-16 bg-[#F9FAF0] rounded-2xl flex items-center justify-center text-[#7CB342] mx-auto group-hover:scale-110 group-hover:bg-[#7CB342] group-hover:text-white transition-all duration-500">
-                  <Phone size={28} />
+                  <Phone size={32} />
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Direct Call</h3>
                   <p className="text-[#6B6B6B] font-light text-sm">(+91) 7674 062 263 <br /> Mon-Fri, 9AM-6PM</p>
                 </div>
-                <p className="text-[#7CB342] font-bold text-xs uppercase tracking-widest pt-2">Call Now</p>
+                <p className="text-[#7CB342] font-bold text-xs uppercase tracking-widest pt-2">CALL NOW</p>
               </div>
             </ScrollReveal>
 
@@ -132,13 +132,13 @@ Quantity: ${formData.estimatedQuantity}`;
             <ScrollReveal delay={0.3}>
               <div className="group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#A47551]/10 hover:-translate-y-2 h-full">
                 <div className="w-16 h-16 bg-[#FAF5F0] rounded-2xl flex items-center justify-center text-[#A47551] mx-auto group-hover:scale-110 group-hover:bg-[#A47551] group-hover:text-white transition-all duration-500">
-                  <MapPin size={28} />
+                  <MapPin size={32} />
                 </div>
                 <div className="space-y-2">
                   <h3 className="text-xl font-bold">Office</h3>
                   <p className="text-[#6B6B6B] font-light text-sm">Kondapur, Telangana <br /> India</p>
                 </div>
-                <p className="text-[#A47551] font-bold text-xs uppercase tracking-widest pt-2">Visit Us</p>
+                <p className="text-[#A47551] font-bold text-xs uppercase tracking-widest pt-2">VISIT US</p>
               </div>
             </ScrollReveal>
           </div>
@@ -165,71 +165,73 @@ Quantity: ${formData.estimatedQuantity}`;
                   className="space-y-6"
                   onSubmit={handleFormSubmit}
                 >
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Name</label>
-                      <input
-                        type="text"
-                        placeholder="Your Name"
-                        className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
-                        required
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      />
+                  <div className="space-y-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="space-y-3">
+                        <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Name</label>
+                        <input
+                          type="text"
+                          placeholder="Your name"
+                          className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
+                          required
+                          value={formData.name}
+                          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        />
+                      </div>
+                      <div className="space-y-3">
+                        <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Company Name</label>
+                        <input
+                          type="text"
+                          placeholder="Your brand / company"
+                          className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
+                          value={formData.companyName}
+                          onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
+                          required
+                        />
+                      </div>
                     </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Company Name</label>
-                      <input
-                        type="text"
-                        placeholder="Your Brand / Company"
-                        className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
-                        value={formData.companyName}
-                        onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                        required
-                      />
-                    </div>
-                  </div>
 
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Email / Phone</label>
-                    <input
-                      type="text"
-                      placeholder="how can we reach you?"
-                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
-                      value={formData.emailOrPhone}
-                      onChange={(e) => setFormData({ ...formData, emailOrPhone: e.target.value })}
-                      required
-                    />
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Product Type</label>
-                      <select
-                        className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none appearance-none cursor-pointer"
-                        value={formData.productType}
-                        onChange={(e) => setFormData({ ...formData, productType: e.target.value })}
-                        required
-                      >
-                        <option value="" disabled>Select Product</option>
-                        <option value="Paper Bags">Paper Bags</option>
-                        <option value="Pouches">Stand-Up Pouches</option>
-                        <option value="Napkins">Paper Napkins</option>
-                        <option value="Mailer Bags">Mailer Bags</option>
-                        <option value="Corrugated Boxes">Cardboard / Corrugated Boxes</option>
-                        <option value="Other">Other / Custom</option>
-                      </select>
-                    </div>
-                    <div className="space-y-2">
-                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Estimated Quantity</label>
+                    <div className="space-y-3">
+                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Email or Phone</label>
                       <input
                         type="text"
-                        placeholder="e.g. 500, 1000, 5000"
+                        placeholder="How can we reach you?"
                         className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
-                        value={formData.estimatedQuantity}
-                        onChange={(e) => setFormData({ ...formData, estimatedQuantity: e.target.value })}
+                        value={formData.emailOrPhone}
+                        onChange={(e) => setFormData({ ...formData, emailOrPhone: e.target.value })}
                         required
                       />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                      <div className="space-y-3">
+                        <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Product Type</label>
+                        <select
+                          className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none appearance-none cursor-pointer"
+                          value={formData.productType}
+                          onChange={(e) => setFormData({ ...formData, productType: e.target.value })}
+                          required
+                        >
+                          <option value="" disabled>Select product</option>
+                          <option value="Paper Bags">Paper Bags</option>
+                          <option value="Pouches">Stand-Up Pouches</option>
+                          <option value="Napkins">Paper Napkins</option>
+                          <option value="Mailer Bags">Mailer Bags</option>
+                          <option value="Corrugated Boxes">Cardboard / Corrugated Boxes</option>
+                          <option value="Other">Other / Custom</option>
+                        </select>
+                      </div>
+                      <div className="space-y-3">
+                        <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Estimated Quantity</label>
+                        <input
+                          type="text"
+                          placeholder="e.g. 500, 1000, 5000"
+                          className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
+                          value={formData.estimatedQuantity}
+                          onChange={(e) => setFormData({ ...formData, estimatedQuantity: e.target.value })}
+                          required
+                        />
+                      </div>
                     </div>
                   </div>
 
@@ -238,7 +240,7 @@ Quantity: ${formData.estimatedQuantity}`;
                     className="w-full py-6 bg-[#2E7D32] text-white rounded-[24px] font-bold text-lg hover:bg-[#25632a] hover:shadow-2xl hover:shadow-[#2E7D32]/20 transition-all active:scale-[0.98] flex items-center justify-center gap-3"
                   >
                     <Send size={20} />
-                    Request Quote
+                    Request a Quote
                   </button>
                 </form>
               </div>
@@ -268,7 +270,7 @@ Quantity: ${formData.estimatedQuantity}`;
                     ].map((time, i) => (
                       <div key={i} className={`flex justify-between items-center p-6 rounded-2xl border transition-colors ${time.active ? 'bg-white/5 border-white/10' : 'bg-transparent border-white/10 opacity-70'}`}>
                         <span className="font-bold text-white">{time.day}</span>
-                        <span className="text-white font-light text-sm">{time.hours}</span>
+                        <span className="text-white font-light text-base">{time.hours}</span>
                       </div>
                     ))}
                   </div>
@@ -343,7 +345,7 @@ Quantity: ${formData.estimatedQuantity}`;
                 className="px-12 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
               >
                 <MessageCircle size={22} />
-                Book an Order
+                Request a Quote
               </button>
               <button
                 onClick={handleCall}

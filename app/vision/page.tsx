@@ -43,14 +43,19 @@ export default function Vision() {
 
                 {/* The Core Message */}
                 <ScrollReveal>
-                    <section className="space-y-12">
-                        <h2 className="text-3xl md:text-4xl font-serif text-[#2B2B2B] leading-relaxed italic" style={{ fontFamily: 'Georgia, serif' }}>
+                    <section className="space-y-12 py-8">
+                        <h2 className="text-3xl md:text-4xl font-serif text-[#2B2B2B] leading-relaxed" style={{ fontFamily: 'Georgia, serif' }}>
                             "To become a global leader in sustainable packaging, enabling brands to choose earth-first solutions without compromise."
                         </h2>
-                        <p className="text-xl text-[#6B6B6B] leading-relaxed font-light max-w-3xl">
-                            We believe that high-quality commerce and environmental responsibility should go hand in hand.
-                            Our focus is on creating a circular economy where every package is an opportunity to reduce waste and protect our natural world.
-                        </p>
+                        <div className="space-y-6 max-w-3xl">
+                            <p className="text-xl text-[#6B6B6B] leading-[1.7] font-light">
+                                We believe that high-quality commerce and environmental responsibility should go hand in hand.
+                                Our focus is on creating a circular economy where every package is an opportunity to reduce waste and protect our natural world.
+                            </p>
+                            <p className="text-lg text-[#2E7D32] leading-relaxed font-medium">
+                                Our vision is built around helping businesses transition to sustainable packaging without compromising quality, branding, or efficiency.
+                            </p>
+                        </div>
                     </section>
                 </ScrollReveal>
 
@@ -58,8 +63,8 @@ export default function Vision() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 pt-10">
                     <ScrollReveal delay={0}>
                         <div className="space-y-4">
-                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32]">
-                                <Globe size={24} />
+                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32] mb-2">
+                                <Globe size={32} />
                             </div>
                             <h3 className="text-2xl font-bold">Global Impact</h3>
                             <p className="text-[#6B6B6B] font-light leading-relaxed">
@@ -70,8 +75,8 @@ export default function Vision() {
 
                     <ScrollReveal delay={0.1}>
                         <div className="space-y-4">
-                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32]">
-                                <Target size={24} />
+                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32] mb-2">
+                                <Target size={32} />
                             </div>
                             <h3 className="text-2xl font-bold">2030 Neutrality</h3>
                             <p className="text-[#6B6B6B] font-light leading-relaxed">
@@ -82,8 +87,8 @@ export default function Vision() {
 
                     <ScrollReveal delay={0.2}>
                         <div className="space-y-4">
-                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32]">
-                                <Leaf size={24} />
+                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32] mb-2">
+                                <Leaf size={32} />
                             </div>
                             <h3 className="text-2xl font-bold">Nature-Safe Tech</h3>
                             <p className="text-[#6B6B6B] font-light leading-relaxed">
@@ -94,8 +99,8 @@ export default function Vision() {
 
                     <ScrollReveal delay={0.3}>
                         <div className="space-y-4">
-                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32]">
-                                <ShieldCheck size={24} />
+                            <div className="w-12 h-12 rounded-xl bg-[#F5F5F0] flex items-center justify-center text-[#2E7D32] mb-2">
+                                <ShieldCheck size={32} />
                             </div>
                             <h3 className="text-2xl font-bold">Ethical Sourcing</h3>
                             <p className="text-[#6B6B6B] font-light leading-relaxed">
@@ -117,7 +122,7 @@ export default function Vision() {
                                 onClick={handleWhatsApp}
                                 className="px-10 py-5 bg-[#2E7D32] text-white rounded-2xl font-bold text-lg hover:bg-[#25632a] transition-all"
                             >
-                                Get in Touch
+                                Request a Quote
                             </button>
                         </div>
                     </div>

@@ -66,12 +66,12 @@ const services = [
 ];
 
 const processSteps = [
-  { step: '01', title: 'Consultation', icon: <MessageCircle size={28} />, desc: 'We discuss your specific packaging dimensions and brand vision.' },
-  { step: '02', title: 'Design & Proof', icon: <Palette size={28} />, desc: 'Our team optimizes your artwork for eco-materials and provides digital proofs.' },
-  { step: '03', title: 'Procurement', icon: <Package size={28} />, desc: 'We source the finest sustainable raw materials for your specific order.' },
-  { step: '04', title: 'Precision Print', icon: <Printer size={28} />, desc: 'High-quality printing using modern technology and eco-friendly inks.' },
-  { step: '05', title: 'Quality Review', icon: <ShieldCheck size={28} />, desc: 'Every single unit undergoes a rigorous structural and print inspection.' },
-  { step: '06', title: 'Dispatch', icon: <Zap size={28} />, desc: 'Fast turnaround and reliable shipping to your doorstep.' },
+  { step: '01', title: 'Consultation', icon: <MessageCircle size={32} />, desc: 'We discuss your specific packaging dimensions and brand vision.' },
+  { step: '02', title: 'Design & Proof', icon: <Palette size={32} />, desc: 'Our team optimizes your artwork for eco-materials and provides digital proofs.' },
+  { step: '03', title: 'Procurement', icon: <Package size={32} />, desc: 'We source the finest sustainable raw materials for your specific order.' },
+  { step: '04', title: 'Precision Print', icon: <Printer size={32} />, desc: 'High-quality printing using modern technology and eco-friendly inks.' },
+  { step: '05', title: 'Quality Review', icon: <ShieldCheck size={32} />, desc: 'Every single unit undergoes a rigorous structural and print inspection.' },
+  { step: '06', title: 'Dispatch', icon: <Zap size={32} />, desc: 'Fast turnaround and reliable shipping to your doorstep.' },
 ];
 
 export default function Services() {
@@ -111,7 +111,7 @@ export default function Services() {
           </h1>
 
           <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto leading-relaxed font-light">
-            Elevating your brand identity with sustainable materials and precision printing. Explore our range of custom-crafted solutions.
+            Elevating your brand identity with eco-friendly materials and precision print-on-demand solutions.
           </p>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function Services() {
                     <div className="space-y-4 pt-4 border-t border-[#F0F0E8] mt-auto">
                       <div className="flex items-center gap-2 text-[#2E7D32]">
                         <CheckCircle2 size={18} />
-                        <span className="text-xs font-bold uppercase tracking-widest">Key Features</span>
+                        <span className="text-xs font-bold uppercase tracking-widest">KEY FEATURES</span>
                       </div>
                       <div className="text-sm font-medium text-[#2E7D32] mb-3">{service.useCase}</div>
                       <ul className="space-y-3">
@@ -174,7 +174,7 @@ export default function Services() {
                       onClick={handleWhatsApp}
                       className="w-full py-5 bg-[#F5F5F0] text-[#2E7D32] rounded-2xl font-bold border border-transparent hover:bg-[#2E7D32] hover:text-white transition-all duration-300 active:scale-95 group/btn overflow-hidden relative mt-6"
                     >
-                      <span className="relative z-10">Get Custom Quote</span>
+                      <span className="relative z-10">Request a Quote</span>
                       <div className="absolute inset-0 bg-[#2E7D32] translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300" />
                     </button>
                   </div>
@@ -253,7 +253,7 @@ export default function Services() {
                 className="px-12 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
               >
                 <MessageCircle size={22} />
-                Book an Order
+                Request a Quote
               </button>
               <button
                 onClick={handleCall}

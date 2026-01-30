@@ -63,9 +63,12 @@ export function AboutSection() {
                 Replacing Plastic <span className="text-[#2E7D32]">With Purpose</span>, One Print At A Time.
               </h2>
 
-              <div className="space-y-5 text-lg leading-relaxed text-[#4B4B4B]">
+              <div className="space-y-6 text-lg leading-[1.7] text-[#4B4B4B]">
                 <p>
                   The Print Pack Company was founded in Hyderabad with a simple goal: to make sustainable packaging accessible to brands of all sizes.
+                </p>
+                <p className="font-medium text-[#2E7D32]">
+                  We work closely with restaurants, D2C brands, retailers, and growing businesses across India.
                 </p>
                 <p>
                   We combine modern printing technology with traditional materials like kraft paper to deliver results that are as beautiful as they are responsible.
@@ -78,8 +81,8 @@ export function AboutSection() {
               {[
                 { title: 'Sustainable', desc: '100% eco-materials', color: '#2E7D32' },
                 { title: 'Premium', desc: 'Expert printing', color: '#7CB342' },
-                { title: 'Trusted', desc: 'Quality assured', color: '#A47551' },
-                { title: 'Custom', desc: 'Design approach', color: '#2E7D32' }
+                { title: 'Trusted', desc: 'Consistent quality across every order', color: '#A47551' },
+                { title: 'Custom', desc: 'Branding tailored to your packaging needs', color: '#2E7D32' }
               ].map((value, idx) => (
                 <div
                   key={idx}
