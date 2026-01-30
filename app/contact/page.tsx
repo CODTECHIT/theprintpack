@@ -9,24 +9,25 @@ import { ScrollReveal } from '@/components/scroll-reveal';
 
 export default function Contact() {
   const [formData, setFormData] = React.useState({
-    fullName: '',
+    name: '',
     companyName: '',
-    subject: 'Kraft Paper Bags',
-    brief: ''
+    emailOrPhone: '',
+    productType: '',
+    estimatedQuantity: ''
   });
 
   const handleWhatsApp = () => window.open('https://wa.me/917674062263?text=Hello!%20I%20need%20your%20services.', '_blank');
 
   const handleFormSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Hello! I would like to enquire about:
-    
-Name: ${formData.fullName}
-Company: ${formData.companyName}
-Requirement: ${formData.subject}
-Brief: ${formData.brief}
 
-Please let me know the next steps.`;
+    const message = `*New Quote Request from Website*
+
+Name: ${formData.name}
+Company: ${formData.companyName}
+Contact: ${formData.emailOrPhone}
+Product: ${formData.productType}
+Quantity: ${formData.estimatedQuantity}`;
 
     window.open(`https://wa.me/917674062263?text=${encodeURIComponent(message)}`, '_blank');
   };
@@ -75,52 +76,69 @@ Please let me know the next steps.`;
       {/* Contact Info Cards - Premium Grid */}
       <section className="py-10 md:py-16 lg:py-24 px-4 md:px-6 relative z-10">
         <div className="container max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {/* WhatsApp Card */}
             <ScrollReveal delay={0}>
               <div
                 onClick={handleWhatsApp}
-                className="group bg-white p-6 md:p-12 rounded-[32px] md:rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 cursor-pointer h-full"
+                className="group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 cursor-pointer h-full"
               >
-                <div className="w-20 h-20 bg-[#F0F5F0] rounded-3xl flex items-center justify-center text-[#2E7D32] mx-auto group-hover:scale-110 group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-500">
-                  <MessageCircle size={32} />
+                <div className="w-16 h-16 bg-[#F0F5F0] rounded-2xl flex items-center justify-center text-[#2E7D32] mx-auto group-hover:scale-110 group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-500">
+                  <MessageCircle size={28} />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">WhatsApp</h3>
-                  <p className="text-[#6B6B6B] font-light">Instant messaging support for quick queries and quotes.</p>
+                  <h3 className="text-xl font-bold">WhatsApp</h3>
+                  <p className="text-[#6B6B6B] font-light text-sm">Instant messaging support for quick queries.</p>
                 </div>
-                <p className="text-[#2E7D32] font-bold text-sm uppercase tracking-widest pt-4">Chat Now</p>
+                <p className="text-[#2E7D32] font-bold text-xs uppercase tracking-widest pt-2">Chat Now</p>
               </div>
             </ScrollReveal>
 
-            {/* Phone Card */}
+            {/* Email Card - New */}
             <ScrollReveal delay={0.1}>
-              <div
-                onClick={handleCall}
-                className="group bg-white p-6 md:p-12 rounded-[32px] md:rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7CB342]/10 hover:-translate-y-2 cursor-pointer h-full"
+              <a
+                href="mailto:Charansaireddychintakunta@gmail.com"
+                className="block group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 cursor-pointer h-full"
               >
-                <div className="w-20 h-20 bg-[#F9FAF0] rounded-3xl flex items-center justify-center text-[#7CB342] mx-auto group-hover:scale-110 group-hover:bg-[#7CB342] group-hover:text-white transition-all duration-500">
-                  <Phone size={32} />
+                <div className="w-16 h-16 bg-[#F0F5F0] rounded-2xl flex items-center justify-center text-[#2E7D32] mx-auto group-hover:scale-110 group-hover:bg-[#2E7D32] group-hover:text-white transition-all duration-500">
+                  <Mail size={28} />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Direct Call</h3>
-                  <p className="text-[#6B6B6B] font-light">(+91) 7674 062 263 <br /> Mon-Fri, 9AM-6PM IST</p>
+                  <h3 className="text-xl font-bold">Email Us</h3>
+                  <p className="text-[#6B6B6B] font-light text-sm break-all">Charansaireddychintakunta@gmail.com</p>
                 </div>
-                <p className="text-[#7CB342] font-bold text-sm uppercase tracking-widest pt-4">Call Support</p>
+                <p className="text-[#2E7D32] font-bold text-xs uppercase tracking-widest pt-2">Send Mail</p>
+              </a>
+            </ScrollReveal>
+
+            {/* Phone Card */}
+            <ScrollReveal delay={0.2}>
+              <div
+                onClick={handleCall}
+                className="group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#7CB342]/10 hover:-translate-y-2 cursor-pointer h-full"
+              >
+                <div className="w-16 h-16 bg-[#F9FAF0] rounded-2xl flex items-center justify-center text-[#7CB342] mx-auto group-hover:scale-110 group-hover:bg-[#7CB342] group-hover:text-white transition-all duration-500">
+                  <Phone size={28} />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="text-xl font-bold">Direct Call</h3>
+                  <p className="text-[#6B6B6B] font-light text-sm">(+91) 7674 062 263 <br /> Mon-Fri, 9AM-6PM</p>
+                </div>
+                <p className="text-[#7CB342] font-bold text-xs uppercase tracking-widest pt-2">Call Now</p>
               </div>
             </ScrollReveal>
 
             {/* Location Card */}
-            <ScrollReveal delay={0.2}>
-              <div className="group bg-white p-6 md:p-12 rounded-[32px] md:rounded-[48px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#A47551]/10 hover:-translate-y-2 h-full">
-                <div className="w-20 h-20 bg-[#FAF5F0] rounded-3xl flex items-center justify-center text-[#A47551] mx-auto group-hover:scale-110 group-hover:bg-[#A47551] group-hover:text-white transition-all duration-500">
-                  <MapPin size={32} />
+            <ScrollReveal delay={0.3}>
+              <div className="group bg-white p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] text-center space-y-6 transition-all duration-500 hover:shadow-2xl hover:shadow-[#A47551]/10 hover:-translate-y-2 h-full">
+                <div className="w-16 h-16 bg-[#FAF5F0] rounded-2xl flex items-center justify-center text-[#A47551] mx-auto group-hover:scale-110 group-hover:bg-[#A47551] group-hover:text-white transition-all duration-500">
+                  <MapPin size={28} />
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-2xl font-bold">Office</h3>
-                  <p className="text-[#6B6B6B] font-light">Kondapur, Telangana <br /> Serving Global Markets</p>
+                  <h3 className="text-xl font-bold">Office</h3>
+                  <p className="text-[#6B6B6B] font-light text-sm">Kondapur, Telangana <br /> India</p>
                 </div>
-                <p className="text-[#A47551] font-bold text-sm uppercase tracking-widest pt-4">Headquarters</p>
+                <p className="text-[#A47551] font-bold text-xs uppercase tracking-widest pt-2">Visit Us</p>
               </div>
             </ScrollReveal>
           </div>
@@ -149,54 +167,70 @@ Please let me know the next steps.`;
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
-                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Full Name</label>
+                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Name</label>
                       <input
                         type="text"
-                        placeholder="e.g. NAME"
+                        placeholder="Your Name"
                         className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
                         required
-                        value={formData.fullName}
-                        onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       />
                     </div>
                     <div className="space-y-2">
                       <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Company Name</label>
                       <input
                         type="text"
-                        placeholder="Your brand name"
+                        placeholder="Your Brand / Company"
                         className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
                         value={formData.companyName}
                         onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
+                        required
                       />
                     </div>
                   </div>
 
                   <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Subject Requirement</label>
-                    <select
-                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none appearance-none cursor-pointer"
-                      value={formData.subject}
-                      onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    >
-                      <option>Kraft Paper Bags</option>
-                      <option>Packaging Boxes</option>
-                      <option>Mailer Solutions</option>
-                      <option>Custom Napkins</option>
-                      <option>Bulk Print Order</option>
-                      <option>Other Enquiry</option>
-                    </select>
+                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Email / Phone</label>
+                    <input
+                      type="text"
+                      placeholder="how can we reach you?"
+                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
+                      value={formData.emailOrPhone}
+                      onChange={(e) => setFormData({ ...formData, emailOrPhone: e.target.value })}
+                      required
+                    />
                   </div>
 
-                  <div className="space-y-2">
-                    <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Project Brief</label>
-                    <textarea
-                      rows={4}
-                      placeholder="Tell us about your packaging dimensions and quantities..."
-                      className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none resize-none"
-                      required
-                      value={formData.brief}
-                      onChange={(e) => setFormData({ ...formData, brief: e.target.value })}
-                    />
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Product Type</label>
+                      <select
+                        className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none appearance-none cursor-pointer"
+                        value={formData.productType}
+                        onChange={(e) => setFormData({ ...formData, productType: e.target.value })}
+                        required
+                      >
+                        <option value="" disabled>Select Product</option>
+                        <option value="Paper Bags">Paper Bags</option>
+                        <option value="Pouches">Stand-Up Pouches</option>
+                        <option value="Napkins">Paper Napkins</option>
+                        <option value="Mailer Bags">Mailer Bags</option>
+                        <option value="Corrugated Boxes">Cardboard / Corrugated Boxes</option>
+                        <option value="Other">Other / Custom</option>
+                      </select>
+                    </div>
+                    <div className="space-y-2">
+                      <label className="text-sm font-bold text-[#2B2B2B] uppercase tracking-wider ml-4">Estimated Quantity</label>
+                      <input
+                        type="text"
+                        placeholder="e.g. 500, 1000, 5000"
+                        className="w-full px-8 py-5 rounded-[24px] bg-[#F5F5F0] border-none focus:ring-2 focus:ring-[#2E7D32]/20 transition-all outline-none"
+                        value={formData.estimatedQuantity}
+                        onChange={(e) => setFormData({ ...formData, estimatedQuantity: e.target.value })}
+                        required
+                      />
+                    </div>
                   </div>
 
                   <button
@@ -204,7 +238,7 @@ Please let me know the next steps.`;
                     className="w-full py-6 bg-[#2E7D32] text-white rounded-[24px] font-bold text-lg hover:bg-[#25632a] hover:shadow-2xl hover:shadow-[#2E7D32]/20 transition-all active:scale-[0.98] flex items-center justify-center gap-3"
                   >
                     <Send size={20} />
-                    Send to Specialist
+                    Request Quote
                   </button>
                 </form>
               </div>

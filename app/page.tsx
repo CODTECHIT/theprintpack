@@ -1,9 +1,12 @@
 'use client';
 
 import { Navigation } from '@/components/navigation';
-import { AboutSection } from '@/components/about-section';
 import { HeroSection } from '@/components/hero-section';
+import { TargetAudienceSection } from '@/components/target-audience-section';
+import { WhyUsSection } from '@/components/why-us-section';
 import { ServicesSection } from '@/components/services-section';
+import { ProcessSection } from '@/components/process-section';
+import { TrustSection } from '@/components/trust-section';
 import { ContactSection } from '@/components/contact-section';
 import { FooterSection } from '@/components/footer-section';
 import { ScrollReveal } from '@/components/scroll-reveal';
@@ -15,21 +18,33 @@ export default function Home() {
       <Navigation />
       <HeroSection />
 
-      <ScrollReveal direction="left">
-        <AboutSection />
+      <ScrollReveal direction="up">
+        <TargetAudienceSection />
       </ScrollReveal>
 
-      <ScrollReveal direction="right">
-        <ServicesSection />
+      <ScrollReveal direction="up">
+        <WhyUsSection />
+      </ScrollReveal>
+
+      <ScrollReveal direction="up">
+        <div id="products">
+          <ServicesSection />
+        </div>
+      </ScrollReveal>
+
+      <ScrollReveal direction="up">
+        <ProcessSection />
+      </ScrollReveal>
+
+      <ScrollReveal direction="up">
+        <TrustSection />
       </ScrollReveal>
 
       <ScrollReveal direction="up">
         <ContactSection />
       </ScrollReveal>
 
-      <ScrollReveal>
-        <FooterSection />
-      </ScrollReveal>
+      <FooterSection />
     </main>
   );
 }

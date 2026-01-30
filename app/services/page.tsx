@@ -9,46 +9,59 @@ import { ScrollReveal } from '@/components/scroll-reveal';
 
 const services = [
   {
-    title: 'Kraft Paper Bags',
-    description: 'High-quality eco-friendly paper bags with custom printing. Perfect for retail, shopping, and promotional use.',
-    features: ['Custom sizes available', 'High-resolution branding', '100% recyclable fibers', 'Reinforced handles'],
+    title: 'Paper Carry Bags',
+    description: 'Custom printed paper bags made using eco-friendly kraft paper to carry your brand identity offline.',
     image: '/paper-bags.jpg',
-    color: '#2E7D32'
+    useCase: 'Ideal for retail stores, restaurants, cafés, and boutiques.',
+    features: [
+      'Available in multiple sizes & handle options',
+      'Custom logo printing available',
+      'MOQ: Starts from low quantities'
+    ]
   },
   {
-    title: 'Packaging Boxes',
-    description: 'Durable kraft paper boxes ideal for product packaging, shipping, and storage. Customizable for any brand.',
-    features: ['Structural design', 'Heavy-duty protection', 'Eco-safe inks', 'Bulk scalability'],
-    image: '/packaging-boxes.jpg',
-    color: '#7CB342'
+    title: 'Paper Stand-Up Pouches',
+    description: 'Eco-friendly stand-up pouches that enhance shelf presence while supporting sustainable packaging goals.',
+    image: '/paper-standup-pouch-new.png',
+    useCase: 'Perfect for food brands, dry goods, snacks, coffee, and specialty products.',
+    features: [
+      'Suitable for retail & D2C packaging',
+      'Custom branding & print options available',
+      'MOQ: Starts from low quantities'
+    ]
   },
   {
-    title: 'Mailer Boxes',
-    description: 'Sustainable shipping boxes for e-commerce and logistics. Strong, reliable, and environmentally responsible.',
-    features: ['E-flute corrugated', 'Self-locking design', 'Custom exterior print', 'Cost-effective bulk'],
-    image: '/mailer-boxes.jpg',
-    color: '#A47551'
+    title: 'Paper Napkins',
+    description: 'Branded paper napkins that reinforce your brand while maintaining hygiene and sustainability standards.',
+    image: '/eco-napkins.jpg',
+    useCase: 'Designed for restaurants, cafés, events, and corporate use.',
+    features: [
+      'Single-color or multi-color logo printing',
+      'Food-grade, eco-friendly paper',
+      'MOQ: Starts from bulk-friendly quantities'
+    ]
   },
   {
     title: 'Mailer Bags',
-    description: 'Eco-friendly bubble mailers for safe product shipping. Combine protection with sustainability.',
-    features: ['Padded cushioning', 'Water-resistant spray', 'Tear-proof edges', 'Self-seal strip'],
+    description: 'Eco-friendly mailer bags that replace plastic while delivering a clean, branded unboxing experience.',
     image: '/mailer-bags.jpg',
-    color: '#2E7D32'
+    useCase: 'Ideal for e-commerce, D2C brands, and online retailers.',
+    features: [
+      'Lightweight and durable for shipping',
+      'Custom logo printing available',
+      'MOQ: Starts from low quantities'
+    ]
   },
   {
-    title: 'Custom Napkins',
-    description: 'Biodegradable napkins perfect for restaurants, cafes, and food businesses. Custom printing available.',
-    features: ['Soft-touch texture', 'Soy-based inks', 'Food-grade certified', 'Multiple fold options'],
-    image: '/eco-napkins.jpg',
-    color: '#7CB342'
-  },
-  {
-    title: 'Design & Printing',
-    description: 'Professional design consultation and custom printing services for all packaging needs.',
-    features: ['Vector optimization', 'Brand consistency', 'Proofing service', 'Creative direction'],
-    image: '/about-packaging.jpg',
-    color: '#A47551'
+    title: 'Cardboard / Corrugated Boxes',
+    description: 'Strong, recyclable corrugated boxes designed to protect products and elevate brand presentation.',
+    image: '/packaging-boxes.jpg',
+    useCase: 'Built for e-commerce shipping, retail packaging, and logistics.',
+    features: [
+      'Multiple sizes and box styles available',
+      'Custom branding and printing options',
+      'MOQ: Based on box size and specifications'
+    ]
   },
 ];
 
@@ -144,11 +157,14 @@ export default function Services() {
                         <CheckCircle2 size={18} />
                         <span className="text-xs font-bold uppercase tracking-widest">Key Features</span>
                       </div>
-                      <ul className="grid grid-cols-1 gap-3">
+                      <div className="text-sm font-medium text-[#2E7D32] mb-3">{service.useCase}</div>
+                      <ul className="space-y-3">
                         {service.features.map((feature, i) => (
-                          <li key={i} className="text-sm text-[#6B6B6B] flex items-center gap-2 group-hover:translate-x-1 transition-transform duration-300">
-                            <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: service.color }} />
-                            {feature}
+                          <li key={i} className="flex items-start gap-3 text-sm text-[#6B6B6B]">
+                            <div className="mt-0.5 p-1 bg-[#2E7D32]/10 rounded-full text-[#2E7D32] flex-shrink-0">
+                              <CheckCircle2 size={12} strokeWidth={3} />
+                            </div>
+                            <span className="leading-tight">{feature}</span>
                           </li>
                         ))}
                       </ul>

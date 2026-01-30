@@ -1,34 +1,63 @@
 'use client'
 
 import Image from 'next/image'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Leaf, MessageCircle } from 'lucide-react'
+import { Leaf, MessageCircle, Check } from 'lucide-react'
 
 const services = [
   {
-    title: 'Paper Bags',
-    description: 'Eco-friendly kraft paper bags perfect for retail and shopping with custom branding options.',
+    title: 'Paper Carry Bags',
+    description: 'Custom printed paper bags made using eco-friendly kraft paper to carry your brand identity offline.',
     image: '/paper-bags.jpg',
+    useCase: 'Ideal for retail stores, restaurants, cafés, and boutiques.',
+    features: [
+      'Available in multiple sizes & handle options',
+      'Custom logo printing available',
+      'MOQ: Starts from low quantities'
+    ]
   },
   {
-    title: 'Packaging Boxes',
-    description: 'Sustainable corrugated packaging boxes with custom printing for product packaging needs.',
-    image: '/packaging-boxes.jpg',
+    title: 'Paper Stand-Up Pouches',
+    description: 'Eco-friendly stand-up pouches that enhance shelf presence while supporting sustainable packaging goals.',
+    image: '/paper-standup-pouch-new.png',
+    useCase: 'Perfect for food brands, dry goods, snacks, coffee, and specialty products.',
+    features: [
+      'Suitable for retail & D2C packaging',
+      'Custom branding & print options available',
+      'MOQ: Starts from low quantities'
+    ]
   },
   {
-    title: 'Napkins',
-    description: 'Biodegradable napkins made from sustainable materials for restaurants and cafes.',
+    title: 'Paper Napkins',
+    description: 'Branded paper napkins that reinforce your brand while maintaining hygiene and sustainability standards.',
     image: '/eco-napkins.jpg',
-  },
-  {
-    title: 'Mailer Boxes',
-    description: 'Durable kraft mailer boxes designed for secure shipping and e-commerce packaging.',
-    image: '/mailer-boxes.jpg',
+    useCase: 'Designed for restaurants, cafés, events, and corporate use.',
+    features: [
+      'Single-color or multi-color logo printing',
+      'Food-grade, eco-friendly paper',
+      'MOQ: Starts from bulk-friendly quantities'
+    ]
   },
   {
     title: 'Mailer Bags',
-    description: 'Eco-friendly mailer bags with cushioning for safe and sustainable product delivery.',
+    description: 'Eco-friendly mailer bags that replace plastic while delivering a clean, branded unboxing experience.',
     image: '/mailer-bags.jpg',
+    useCase: 'Ideal for e-commerce, D2C brands, and online retailers.',
+    features: [
+      'Lightweight and durable for shipping',
+      'Custom logo printing available',
+      'MOQ: Starts from low quantities'
+    ]
+  },
+  {
+    title: 'Cardboard / Corrugated Boxes',
+    description: 'Strong, recyclable corrugated boxes designed to protect products and elevate brand presentation.',
+    image: '/packaging-boxes.jpg',
+    useCase: 'Built for e-commerce shipping, retail packaging, and logistics.',
+    features: [
+      'Multiple sizes and box styles available',
+      'Custom branding and printing options',
+      'MOQ: Based on box size and specifications'
+    ]
   },
 ]
 
@@ -46,61 +75,65 @@ export function ServicesSection() {
 
       <div className="container max-w-7xl mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div className="text-center space-y-6 mb-20">
+        <div className="text-center space-y-6 mb-16">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/50 backdrop-blur-sm border border-[#2E7D32]/10 text-[#2E7D32] shadow-sm">
             <Leaf size={18} className="animate-pulse" />
-            <span className="text-xs font-bold uppercase tracking-widest">Premium Collection</span>
+            <span className="text-xs font-bold uppercase tracking-widest">Our Products</span>
           </div>
 
           <h2 className="text-4xl md:text-6xl font-serif text-[#2B2B2B] leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-            Our Eco <span className="text-[#2E7D32]">Packaging Range</span>
+            Our Packaging <span className="text-[#2E7D32]">Products</span>
           </h2>
-
-          <p className="text-lg md:text-xl max-w-2xl mx-auto text-[#6B6B6B] leading-relaxed font-light">
-            Crafting sustainable stories through premium materials and bespoke printing solutions for the conscious brand.
-          </p>
         </div>
 
-        {/* Services Grid - Dynamic Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8">
+        {/* Services Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className={`group relative overflow-hidden rounded-[32px] bg-white border border-[#E8E8E3] transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/10 hover:-translate-y-2 flex flex-col
-                ${index === 0 ? 'lg:col-span-8' : index === 1 ? 'lg:col-span-4' : 'lg:col-span-4'}`}
+              className="group relative flex flex-col bg-white rounded-[24px] overflow-hidden border border-[#E8E8E3] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
               {/* Image Container */}
-              <div className="relative h-72 w-full overflow-hidden shrink-0">
+              <div className="relative h-64 w-full overflow-hidden shrink-0">
                 <Image
                   src={service.image || "/placeholder.svg"}
                   alt={service.title}
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 768px) 100vw, 33vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-80 group-hover:opacity-60 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-60" />
 
-                {/* Float Badge */}
-                <div className="absolute bottom-6 left-6 right-6">
-                  <h3 className="text-2xl font-bold text-white mb-1 drop-shadow-md">
-                    {service.title}
-                  </h3>
-                </div>
+                <h3 className="absolute bottom-4 left-4 text-xl font-bold text-white drop-shadow-md">
+                  {service.title}
+                </h3>
               </div>
 
               {/* Content */}
-              <div className="p-6 md:p-8 space-y-6 flex flex-col flex-grow">
-                <p className="text-sm leading-relaxed text-[#6B6B6B]">
+              <div className="p-6 flex flex-col flex-grow">
+                <p className="text-sm font-medium text-[#2E7D32] mb-3">{service.useCase}</p>
+                <p className="text-[#6B6B6B] leading-relaxed mb-6 text-sm">
                   {service.description}
                 </p>
 
-                <div className="mt-auto pt-2">
+                <ul className="space-y-3 mb-6 flex-grow">
+                  {service.features.map((feature, i) => (
+                    <li key={i} className="flex items-start gap-3 text-sm text-[#4B4B4B]">
+                      <div className="mt-0.5 p-1 bg-[#2E7D32]/10 rounded-full text-[#2E7D32] flex-shrink-0">
+                        <Check size={12} strokeWidth={3} />
+                      </div>
+                      <span className="leading-tight">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+
+                <div className="mt-auto">
                   <button
                     onClick={() => handleWhatsApp(service.title)}
-                    className="w-full py-3 bg-[#F5F5F0] hover:bg-[#2E7D32] text-[#2E7D32] hover:text-white rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2 group/btn active:scale-95"
+                    className="w-full py-3 bg-white border-2 border-[#2E7D32] text-[#2E7D32] hover:bg-[#2E7D32] hover:text-white rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <MessageCircle size={18} />
-                    Get a Quote
+                    Get Custom Pricing
                   </button>
                 </div>
               </div>
@@ -108,29 +141,15 @@ export function ServicesSection() {
           ))}
         </div>
 
-        {/* Premium Highlights */}
-        <div className="mt-12 md:mt-16 pt-10 md:pt-12 border-t border-[#E8E8E3]">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
-            {[
-              { label: 'Eco Materials', value: '100%', color: '#2E7D32', sub: 'Biodegradable & Recyclable' },
-              { label: 'Printing Available', value: 'Custom', color: '#7CB342', sub: 'High-Precision Branding' },
-              { label: 'Orders Accepted', value: 'Bulk & Small', color: '#A47551', sub: 'Scalable for Any Business' }
-            ].map((stat, i) => (
-              <div key={i} className="text-center group cursor-default">
-                <div
-                  className="text-5xl font-bold mb-3 transition-transform duration-300 group-hover:scale-110"
-                  style={{ color: stat.color }}
-                >
-                  {stat.value}
-                </div>
-                <div className="text-[#2B2B2B] font-bold text-lg mb-1">{stat.label}</div>
-                <div className="text-[#6B6B6B] text-sm font-medium opacity-70">{stat.sub}</div>
-              </div>
-            ))}
-          </div>
+        <div className="mt-12 text-center">
+          <a href="#quote" className="inline-flex items-center gap-2 text-[#2E7D32] font-bold hover:underline text-lg">
+            Get Custom Pricing for Your Products →
+          </a>
         </div>
+
       </div>
     </section>
   )
 }
+
 

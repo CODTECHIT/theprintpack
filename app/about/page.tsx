@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { Leaf, Award, Zap, Heart, ShieldCheck, TrendingUp, Users } from 'lucide-react';
 import { Navigation } from '@/components/navigation';
 import { AboutSection } from "@/components/about-section";
+import { WhyUsSection } from '@/components/why-us-section';
 import { FooterSection } from '@/components/footer-section';
 import { ScrollReveal } from '@/components/scroll-reveal';
 
@@ -117,56 +118,7 @@ export default function About() {
       </section>
 
       {/* Why Choose Us - Premium Features Grid */}
-      <section className="py-10 md:py-16 lg:py-24 bg-[#F9F9F4]">
-        <div className="container max-w-7xl mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <ScrollReveal>
-              <div className="space-y-12">
-                <div className="space-y-6">
-                  <h2 className="text-4xl md:text-6xl font-serif leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-                    Why Brands <span className="text-[#2E7D32]">Trust Us</span>
-                  </h2>
-                  <p className="text-[#6B6B6B] text-lg font-light leading-relaxed">
-                    We bridge the gap between aesthetics and environmental responsibility. Our Hyderabad-based facility is equipped to handle custom requirements with precision.
-                  </p>
-                </div>
-
-                <div className="space-y-8">
-                  {[
-                    { icon: <ShieldCheck className="text-[#2E7D32]" />, title: "Quality Guaranteed", desc: "Rigorous quality checks for every single order." },
-                    { icon: <TrendingUp className="text-[#7CB342]" />, title: "Scalable Orders", desc: "Flexible MOQs for startups and massive capacity for enterprises." },
-                    { icon: <Users className="text-[#A47551]" />, title: "Design Support", desc: "Our experts help you optimize your brand for eco-materials." }
-                  ].map((feature, i) => (
-                    <div key={i} className="flex gap-6 items-start">
-                      <div className="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center flex-shrink-0">
-                        {feature.icon}
-                      </div>
-                      <div>
-                        <h4 className="text-xl font-bold mb-1">{feature.title}</h4>
-                        <p className="text-[#6B6B6B] font-light">{feature.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </ScrollReveal>
-
-            <ScrollReveal delay={0.2}>
-              <div className="relative group">
-                <div className="absolute -inset-4 bg-[#2E7D32]/10 rounded-[30px] md:rounded-[48px] rotate-3 blur-sm -z-10 group-hover:rotate-0 transition-transform duration-700" />
-                <div className="relative h-[320px] md:h-[650px] w-full rounded-[24px] md:rounded-[40px] overflow-hidden shadow-2xl border-[6px] md:border-[12px] border-white">
-                  <Image
-                    src="/hero-packaging.jpg"
-                    alt="Quality packaging craftsmanship"
-                    fill
-                    className="object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
-                </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </div>
-      </section>
+      <WhyUsSection />
 
       {/* Premium CTA Section */}
       <ScrollReveal>
