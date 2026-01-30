@@ -11,8 +11,8 @@ const steps = [
     },
     {
         number: '02',
-        title: 'Design & Print Approval',
-        description: 'We prepare print layouts and confirm materials before production.',
+        title: 'Design, Pricing & Print Approval',
+        description: 'We share print layouts, material details, pricing and payment terms for your approval before production.',
         icon: LayoutTemplate
     },
     {
@@ -25,8 +25,8 @@ const steps = [
 
 export function ProcessSection() {
     return (
-        <section className="py-16 md:py-24 bg-white relative">
-            <div className="container mx-auto px-4">
+        <section className="py-12 md:py-20 bg-white relative">
+            <div className="container mx-auto px-6">
                 {/* Header */}
                 <div className="text-center mb-16">
                     <span className="text-[#2E7D32] font-semibold tracking-wider text-sm uppercase block mb-3">Workflow</span>
@@ -36,18 +36,18 @@ export function ProcessSection() {
                 {/* Steps */}
                 <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4 max-w-6xl mx-auto">
                     {/* Connecting Line (Desktop) */}
-                    <div className="hidden lg:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-[#E8E8E3] to-transparent z-0"></div>
+                    <div className="hidden lg:block absolute top-14 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-[#E8E8E3] to-transparent z-0"></div>
 
                     {steps.map((step, index) => (
                         <div key={index} className="relative z-10 flex flex-col items-center text-center">
-                            <div className="w-24 h-24 rounded-full bg-white border-4 border-[#2E7D32]/10 flex items-center justify-center mb-6 shadow-lg shadow-green-900/5 group hover:scale-110 transition-transform duration-300">
+                            <div className="w-28 h-28 rounded-full bg-white border-4 border-[#2E7D32]/10 flex items-center justify-center mb-8 shadow-lg shadow-green-900/5 group hover:scale-110 transition-transform duration-300">
                                 <step.icon size={32} className="text-[#2E7D32]" />
-                                <div className="absolute -top-2 -right-2 w-8 h-8 rounded-full bg-[#2E7D32] text-white flex items-center justify-center font-bold text-sm">
+                                <div className="absolute -top-2 -right-2 w-10 h-10 rounded-full bg-[#2E7D32] text-white flex items-center justify-center font-bold text-base">
                                     {step.number}
                                 </div>
                             </div>
-                            <h3 className="text-xl font-bold text-[#2B2B2B] mb-3">{step.title}</h3>
-                            <p className="text-[#6B6B6B] max-w-xs leading-relaxed">{step.description}</p>
+                            <h3 className="text-xl font-bold text-[#2B2B2B] mb-4">{step.title}</h3>
+                            <p className="text-[#4B4B4B] max-w-xs leading-relaxed">{step.description}</p>
                         </div>
                     ))}
                 </div>

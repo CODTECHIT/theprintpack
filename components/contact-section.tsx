@@ -27,11 +27,11 @@ Quantity: ${formData.estimatedQuantity}`;
     };
 
     return (
-        <section id="quote" className="py-16 md:py-24 px-4 md:px-6 relative overflow-hidden bg-white">
+        <section id="quote" className="py-12 md:py-20 px-6 relative overflow-hidden bg-white">
             <div className="max-w-4xl mx-auto relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-bold text-[#2B2B2B] mb-4">Get a Custom Packaging Quote</h2>
-                    <p className="text-[#6B6B6B]">No spam. B2B enquiries only.</p>
+                    <p className="text-[#4B4B4B]">No spam. B2B enquiries only.</p>
                 </div>
 
                 <div className="bg-[#F9F9F4] p-6 md:p-12 rounded-[32px] shadow-xl border border-[#E8E8E3]">
@@ -109,7 +109,7 @@ Quantity: ${formData.estimatedQuantity}`;
                             className="w-full bg-[#2E7D32] text-white font-bold py-5 rounded-xl hover:bg-[#25632a] hover:shadow-lg transition-all duration-300 active:scale-[0.99] mt-4 flex items-center justify-center gap-2"
                         >
                             <Send size={20} />
-                            Request Quote
+                            Request a Quote
                         </button>
                     </form>
                 </div>

@@ -3,7 +3,7 @@ import { Leaf } from 'lucide-react'
 
 export function AboutSection() {
   return (
-    <section className="py-10 md:py-12 lg:py-20 overflow-hidden relative" style={{ backgroundColor: '#F5F5F0' }}>
+    <section className="py-12 md:py-20 overflow-hidden relative" style={{ backgroundColor: '#F5F5F0' }}>
       {/* Decorative leaf backgrounds */}
       <div className="absolute top-10 -right-20 opacity-5 pointer-events-none animate-leaf">
         <Leaf size={400} strokeWidth={0.5} style={{ color: '#2E7D32' }} />
@@ -19,7 +19,7 @@ export function AboutSection() {
         </div>
       </div>
 
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Image Column */}
           <div className="relative group">
@@ -60,10 +60,10 @@ export function AboutSection() {
               </div>
 
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.15] tracking-tight" style={{ color: '#2B2B2B' }}>
-                Replacing plastic <span className="text-[#2E7D32]">with purpose</span>, one print at a time.
+                Replacing Plastic <span className="text-[#2E7D32]">With Purpose</span>, One Print At A Time.
               </h2>
 
-              <div className="space-y-5 text-lg leading-relaxed text-[#6B6B6B]">
+              <div className="space-y-5 text-lg leading-relaxed text-[#4B4B4B]">
                 <p>
                   The Print Pack Company was founded in Hyderabad with a simple goal: to make sustainable packaging accessible to brands of all sizes.
                 </p>
@@ -89,7 +89,7 @@ export function AboutSection() {
                     <span className="w-1.5 h-1.5 rounded-full" style={{ backgroundColor: value.color }} />
                     {value.title}
                   </h3>
-                  <p className="text-sm text-[#6B6B6B]">{value.desc}</p>
+                  <p className="text-sm text-[#4B4B4B]">{value.desc}</p>
                 </div>
               ))}
             </div>

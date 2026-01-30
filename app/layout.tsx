@@ -9,11 +9,11 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'The Print Pack Company | Eco-Friendly Packaging Solutions',
-  description: 'Sustainable, eco-friendly packaging and print-on-demand solutions crafted in Hyderabad. Custom paper bags, packaging boxes, and mailer solutions for your brand.',
+  title: 'Custom Eco-Friendly Packaging in Hyderabad – Print-on-Demand',
+  description: 'Eco-friendly custom packaging solutions in Hyderabad. Print-on-demand branded paper bags, mailer bags, pouches, napkins & corrugated boxes for restaurants, D2C and retail brands.',
   openGraph: {
-    title: 'The Print Pack Company | Eco-Friendly Packaging',
-    description: 'Sustainable packaging solutions for brands that care about the environment',
+    title: 'Custom Eco-Friendly Packaging in Hyderabad – Print-on-Demand',
+    description: 'Eco-friendly custom packaging solutions in Hyderabad. Print-on-demand branded paper bags, mailer bags, pouches, napkins & corrugated boxes for restaurants, D2C and retail brands.',
     type: 'website',
   },
   icons: {
@@ -50,7 +50,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased`}>
+      <body className={`font-sans antialiased`} suppressHydrationWarning>
         {children}
         <FloatingActionButton />
         <Analytics />

@@ -27,8 +27,8 @@ const reasons = [
 
 export function WhyUsSection() {
     return (
-        <section id="about" className="py-20 bg-[#2E7D32] text-white">
-            <div className="container mx-auto px-4">
+        <section id="about" className="py-12 md:py-20 bg-[#2E7D32] text-white">
+            <div className="container mx-auto px-6">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     {/* Left Content */}
                     <div className="lg:col-span-4 space-y-6">
@@ -42,7 +42,7 @@ export function WhyUsSection() {
                         {reasons.map((reason, index) => (
                             <div key={index} className="bg-white/10 backdrop-blur-sm p-8 rounded-2xl border border-white/20 hover:bg-white/15 transition-colors">
                                 <div className="w-12 h-12 bg-white text-[#2E7D32] rounded-lg flex items-center justify-center mb-4">
-                                    <reason.icon size={24} />
+                                    <reason.icon size={32} />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
                                 <p className="text-white/80 leading-relaxed">{reason.description}</p>

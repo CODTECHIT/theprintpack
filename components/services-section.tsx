@@ -40,7 +40,7 @@ const services = [
   {
     title: 'Mailer Boxes',
     description: 'Eco-friendly mailer boxes that replace plastic while delivering a clean, branded unboxing experience.',
-    image: '/images/mailer-boxes-updated.png',
+    image: '/images/mailer-boxes-realistic.png',
     useCase: 'Ideal for e-commerce, D2C brands, and online retailers.',
     features: [
       'Lightweight and durable for shipping',
@@ -51,7 +51,7 @@ const services = [
   {
     title: 'Cardboard / Corrugated Boxes',
     description: 'Strong, recyclable corrugated boxes designed to protect products and elevate brand presentation.',
-    image: '/packaging-boxes.jpg',
+    image: '/images/corrugated-boxes-realistic.png',
     useCase: 'Built for e-commerce shipping, retail packaging, and logistics.',
     features: [
       'Multiple sizes and box styles available',
@@ -68,7 +68,7 @@ export function ServicesSection() {
   }
 
   return (
-    <section className="py-12 md:py-16 lg:py-24 bg-[#F9F9F4] relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-[#F9F9F4] relative overflow-hidden">
       {/* Background Decorations */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-[#2E7D32]/5 rounded-full blur-3xl -mr-48 -mt-48" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#A47551]/5 rounded-full blur-3xl -ml-48 -mb-48" />
@@ -81,8 +81,8 @@ export function ServicesSection() {
             <span className="text-xs font-bold uppercase tracking-widest">Our Products</span>
           </div>
 
-          <h2 className="text-4xl md:text-6xl font-serif text-[#2B2B2B] leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
-            Our Packaging <span className="text-[#2E7D32]">Products</span>
+          <h2 className="text-4xl md:text-5xl font-serif text-[#2B2B2B] leading-tight" style={{ fontFamily: 'Georgia, serif' }}>
+            Eco Packaging Products – <span className="text-[#2E7D32]">Paper Bags, Mailer Bags, Boxes</span>
           </h2>
         </div>
 
@@ -112,7 +112,7 @@ export function ServicesSection() {
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
                 <p className="text-sm font-medium text-[#2E7D32] mb-3">{service.useCase}</p>
-                <p className="text-[#6B6B6B] leading-relaxed mb-6 text-sm">
+                <p className="text-[#4B4B4B] leading-relaxed mb-6 text-sm">
                   {service.description}
                 </p>
 
@@ -133,7 +133,7 @@ export function ServicesSection() {
                     className="w-full py-3 bg-white border-2 border-[#2E7D32] text-[#2E7D32] hover:bg-[#2E7D32] hover:text-white rounded-xl font-bold text-sm transition-all duration-300 flex items-center justify-center gap-2"
                   >
                     <MessageCircle size={18} />
-                    Get Custom Pricing
+                    Request a Quote
                   </button>
                 </div>
               </div>
@@ -143,7 +143,7 @@ export function ServicesSection() {
 
         <div className="mt-12 text-center">
           <a href="#quote" className="inline-flex items-center gap-2 text-[#2E7D32] font-bold hover:underline text-lg">
-            Get Custom Pricing for Your Products →
+            Request a Quote for Your Products →
           </a>
         </div>
 

@@ -51,7 +51,7 @@ export function HeroSection() {
         </svg>
       </motion.div>
 
-      <div className="container max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
           variants={containerVariants}
@@ -74,21 +74,21 @@ export function HeroSection() {
                 style={{ color: '#2B2B2B' }}
               >
                 <span className="block">Custom Eco-Friendly</span>
-                <span className="text-[#2E7D32] block">Packaging</span>
-                <span className="block mt-3 text-xl sm:text-2xl md:text-3xl font-serif italic text-center lg:text-left text-[#4B4B4B]" style={{ fontFamily: 'Georgia, serif' }}>
-                  Printed On-Demand for Your Brand
+                <span className="text-[#2E7D32] block">Packaging in Hyderabad</span>
+                <span className="block mt-2 text-xl sm:text-2xl md:text-3xl font-serif italic text-center lg:text-left text-[#4B4B4B]" style={{ fontFamily: 'Georgia, serif' }}>
+                  Print-on-Demand
                 </span>
               </motion.h1>
 
               <motion.p
                 variants={itemVariants}
-                className="text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0 text-balance text-center lg:text-left px-2 sm:px-0"
-                style={{ color: '#6B6B6B' }}
+                className="text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0 text-balance text-center lg:text-left px-2 sm:px-0 mt-2"
+                style={{ color: '#4B4B4B' }}
               >
                 We help restaurants, D2C brands, retailers, and businesses get sustainably sourced packaging with their branding — without bulk manufacturing or waste.
               </motion.p>
 
-              <motion.ul variants={itemVariants} className="space-y-2 text-left w-fit mx-auto lg:mx-0 max-w-md pl-2 sm:pl-0">
+              <motion.ul variants={itemVariants} className="space-y-2 text-left w-fit mx-auto lg:mx-0 max-w-md pl-2 sm:pl-0 mt-4">
                 {[
                   "Eco-friendly materials",
                   "Custom logo printing",
@@ -104,7 +104,7 @@ export function HeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start w-full lg:w-auto">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 pt-4 justify-center lg:justify-start w-full lg:w-auto">
               <a href="#quote" className="w-full sm:w-auto">
                 <Button className="w-full h-14 md:h-12 px-8 text-white rounded-xl text-base font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-95" style={{ backgroundColor: '#2E7D32' }}>
                   Request a Quote

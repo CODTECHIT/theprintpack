@@ -4,18 +4,18 @@ import { ShieldCheck } from 'lucide-react';
 
 export function TrustSection() {
     return (
-        <section className="py-20 bg-[#F5F5F0] border-y border-[#E8E8E3]">
-            <div className="container mx-auto px-4 text-center">
+        <section className="py-12 md:py-20 bg-[#F5F5F0] border-y border-[#E8E8E3]">
+            <div className="container mx-auto px-6 text-center">
                 <div className="inline-flex items-center gap-2 mb-6 text-[#2E7D32] bg-[#2E7D32]/10 px-4 py-2 rounded-full">
                     <ShieldCheck size={20} />
                     <span className="font-semibold text-sm uppercase tracking-wider">Trust & Credibility</span>
                 </div>
 
                 <h2 className="text-3xl md:text-5xl font-bold text-[#2B2B2B] mb-6 max-w-4xl mx-auto leading-tight">
-                    Built for Businesses That Care About Quality & Sustainability
+                    Built For Businesses That Care About Quality & Sustainability
                 </h2>
 
-                <p className="text-lg md:text-xl text-[#6B6B6B] max-w-3xl mx-auto leading-relaxed mb-10">
+                <p className="text-lg md:text-xl text-[#4B4B4B] max-w-3xl mx-auto leading-relaxed mb-10">
                     We work closely with growing brands to deliver reliable, eco-friendly packaging without the complexity of large-scale manufacturing.
                 </p>
 

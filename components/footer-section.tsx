@@ -12,10 +12,10 @@ export function FooterSection() {
           {/* Brand Info */}
           <div className="space-y-4">
             <h3 className="text-2xl font-bold text-white">The Print Pack Company</h3>
-            <p className="text-[#A0A0A0] text-sm leading-relaxed max-w-xs">
-              Eco-Friendly Custom Packaging Solutions.<br />
-              Hyderabad, India.
-            </p>
+            <div className="text-[#A0A0A0] text-sm leading-relaxed max-w-xs">
+              <p>Eco-Friendly Custom Packaging Solutions.</p>
+              <p>Hyderabad, India.</p>
+            </div>
           </div>
 
           {/* Contact Info */}
