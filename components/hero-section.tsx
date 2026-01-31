@@ -53,14 +53,14 @@ export function HeroSection() {
 
       <div className="container max-w-7xl mx-auto px-6 lg:px-8">
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
           {/* Text Content */}
-          <div className="flex flex-col gap-6 lg:gap-8 text-center lg:text-left items-center lg:items-start max-w-full order-1 lg:order-none">
-            <div className="space-y-4 lg:space-y-6 w-full">
+          <div className="flex flex-col gap-5 lg:gap-6 text-center lg:text-left items-center lg:items-start max-w-full order-1 lg:order-none">
+            <div className="space-y-4 w-full">
               <motion.div variants={itemVariants} className="inline-flex flex-wrap justify-center lg:justify-start items-center gap-2 px-4 py-1.5 rounded-full bg-[#2E7D32]/10 border border-[#2E7D32]/20 mb-2 max-w-full">
                 <span className="w-2 h-2 rounded-full bg-[#2E7D32] animate-pulse shrink-0"></span>
                 <span className="text-[10px] sm:text-xs md:text-sm font-medium text-[#2E7D32] uppercase tracking-wide text-center lg:text-left leading-tight">
@@ -70,7 +70,7 @@ export function HeroSection() {
 
               <motion.h1
                 variants={itemVariants}
-                className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight flex flex-col items-center lg:items-start"
+                className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight flex flex-col items-center lg:items-start"
                 style={{ color: '#2B2B2B' }}
               >
                 <span className="block">Custom Eco-Friendly</span>
@@ -85,7 +85,7 @@ export function HeroSection() {
                 className="text-base sm:text-lg md:text-xl leading-relaxed max-w-lg mx-auto lg:mx-0 text-balance text-center lg:text-left px-2 sm:px-0 mt-2"
                 style={{ color: '#4B4B4B' }}
               >
-                We help restaurants, D2C brands, retailers, and businesses get sustainably sourced packaging with their branding — without bulk manufacturing or waste.
+                We help businesses get sustainable, custom-branded packaging without bulk manufacturing or waste.
               </motion.p>
 
               <motion.ul variants={itemVariants} className="space-y-2 text-left w-fit mx-auto lg:mx-0 max-w-md pl-2 sm:pl-0 mt-4">
@@ -104,7 +104,7 @@ export function HeroSection() {
             </div>
 
             {/* CTA Buttons */}
-            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-6 pt-4 justify-center lg:justify-start w-full lg:w-auto">
+            <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-5 pt-4 justify-center lg:justify-start w-full lg:w-auto">
               <a href="#quote" className="w-full sm:w-auto">
                 <Button className="w-full h-14 md:h-12 px-8 text-white rounded-xl text-base font-semibold flex items-center justify-center gap-2 transition-all duration-300 hover:shadow-xl hover:scale-[1.02] active:scale-95" style={{ backgroundColor: '#2E7D32' }}>
                   Request a Quote

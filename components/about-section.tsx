@@ -63,7 +63,7 @@ export function AboutSection() {
                 Replacing Plastic <span className="text-[#2E7D32]">With Purpose</span>, One Print At A Time.
               </h2>
 
-              <div className="space-y-6 text-lg leading-[1.7] text-[#4B4B4B]">
+              <div className="space-y-6 text-lg leading-loose text-[#4B4B4B] max-w-2xl">
                 <p>
                   The Print Pack Company was founded in Hyderabad with a simple goal: to make sustainable packaging accessible to brands of all sizes.
                 </p>

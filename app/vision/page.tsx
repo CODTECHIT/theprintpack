@@ -28,7 +28,6 @@ export default function Vision() {
                             Redefining the <br />
                             <span className="text-[#2E7D32] italic text-6xl md:text-8xl">Soul of Packaging.</span>
                         </h1>
-                        <div className="h-1 w-20 bg-[#2E7D32]" />
                     </div>
 
                     <div className="w-full lg:w-96 aspect-square relative rounded-[40px] overflow-hidden shadow-xl border-8 border-[#F5F5F0]">
@@ -48,11 +47,11 @@ export default function Vision() {
                             "To become a global leader in sustainable packaging, enabling brands to choose earth-first solutions without compromise."
                         </h2>
                         <div className="space-y-6 max-w-3xl">
-                            <p className="text-xl text-[#6B6B6B] leading-[1.7] font-light">
+                            <p className="text-xl text-[#6B6B6B] leading-loose font-light">
                                 We believe that high-quality commerce and environmental responsibility should go hand in hand.
                                 Our focus is on creating a circular economy where every package is an opportunity to reduce waste and protect our natural world.
                             </p>
-                            <p className="text-lg text-[#2E7D32] leading-relaxed font-medium">
+                            <p className="text-lg text-[#2E7D32] leading-loose font-medium">
                                 Our vision is built around helping businesses transition to sustainable packaging without compromising quality, branding, or efficiency.
                             </p>
                         </div>
@@ -80,7 +79,7 @@ export default function Vision() {
                             </div>
                             <h3 className="text-2xl font-bold">2030 Neutrality</h3>
                             <p className="text-[#6B6B6B] font-light leading-relaxed">
-                                Full transition to renewable energy and 100% sustainable sourcing for all our printing and packaging materials.
+                                Working towards full transition to renewable energy and 100% sustainable sourcing for all our printing and packaging materials.
                             </p>
                         </div>
                     </ScrollReveal>
@@ -104,7 +103,7 @@ export default function Vision() {
                             </div>
                             <h3 className="text-2xl font-bold">Ethical Sourcing</h3>
                             <p className="text-[#6B6B6B] font-light leading-relaxed">
-                                Ensuring 100% of our wood fibers come from responsibly managed forests (FSC) to protect biodiversity.
+                                Working to ensure 100% of our wood fibers come from responsibly managed forests (FSC) to protect biodiversity.
                             </p>
                         </div>
                     </ScrollReveal>
@@ -120,7 +119,7 @@ export default function Vision() {
                             </div>
                             <button
                                 onClick={handleWhatsApp}
-                                className="px-10 py-5 bg-[#2E7D32] text-white rounded-2xl font-bold text-lg hover:bg-[#25632a] transition-all"
+                                className="px-8 h-14 md:h-12 bg-[#2E7D32] text-white rounded-xl font-bold text-lg hover:bg-[#25632a] transition-all"
                             >
                                 Request a Quote
                             </button>

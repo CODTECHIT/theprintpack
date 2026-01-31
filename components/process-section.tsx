@@ -28,13 +28,13 @@ export function ProcessSection() {
         <section className="py-12 md:py-20 bg-white relative">
             <div className="container mx-auto px-6">
                 {/* Header */}
-                <div className="text-center mb-16">
+                <div className="text-center mb-24">
                     <span className="text-[#2E7D32] font-semibold tracking-wider text-sm uppercase block mb-3">Workflow</span>
                     <h2 className="text-3xl md:text-5xl font-bold text-[#2B2B2B]">How It Works</h2>
                 </div>
 
                 {/* Steps */}
-                <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4 max-w-6xl mx-auto">
+                <div className="relative grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-4 max-w-6xl mx-auto">
                     {/* Connecting Line (Desktop) */}
                     <div className="hidden lg:block absolute top-14 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-transparent via-[#E8E8E3] to-transparent z-0"></div>
 

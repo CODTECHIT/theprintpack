@@ -8,7 +8,7 @@ const services = [
     title: 'Paper Carry Bags',
     description: 'Custom printed paper bags made using eco-friendly kraft paper to carry your brand identity offline.',
     image: '/paper-bags.jpg',
-    useCase: 'Ideal for retail stores, restaurants, cafés, and boutiques.',
+    useCase: 'Ideal for retail stores, restaurants, cafés, and boutiques',
     features: [
       'Available in multiple sizes & handle options',
       'Custom logo printing available',
@@ -19,7 +19,7 @@ const services = [
     title: 'Paper Stand-Up Pouches',
     description: 'Eco-friendly stand-up pouches that enhance shelf presence while supporting sustainable packaging goals.',
     image: '/paper-standup-pouch-new.png',
-    useCase: 'Perfect for food brands, dry goods, snacks, coffee, and specialty products.',
+    useCase: 'Perfect for food brands, dry goods, snacks, coffee, and specialty products',
     features: [
       'Suitable for retail & D2C packaging',
       'Custom branding & print options available',
@@ -30,7 +30,7 @@ const services = [
     title: 'Paper Napkins',
     description: 'Branded paper napkins that reinforce your brand while maintaining hygiene and sustainability standards.',
     image: '/eco-napkins.jpg',
-    useCase: 'Designed for restaurants, cafés, events, and corporate use.',
+    useCase: 'Designed for restaurants, cafés, events, and corporate use',
     features: [
       'Single-color or multi-color logo printing',
       'Food-grade, eco-friendly paper',
@@ -41,7 +41,7 @@ const services = [
     title: 'Mailer Boxes',
     description: 'Eco-friendly mailer boxes that replace plastic while delivering a clean, branded unboxing experience.',
     image: '/images/mailer-boxes-realistic.png',
-    useCase: 'Ideal for e-commerce, D2C brands, and online retailers.',
+    useCase: 'Ideal for e-commerce, D2C brands, and online retailers',
     features: [
       'Lightweight and durable for shipping',
       'Custom logo printing available',
@@ -52,7 +52,7 @@ const services = [
     title: 'Cardboard / Corrugated Boxes',
     description: 'Strong, recyclable corrugated boxes designed to protect products and elevate brand presentation.',
     image: '/images/corrugated-boxes-realistic.png',
-    useCase: 'Built for e-commerce shipping, retail packaging, and logistics.',
+    useCase: 'Built for e-commerce shipping, retail packaging, and logistics',
     features: [
       'Multiple sizes and box styles available',
       'Custom branding and printing options',
@@ -91,7 +91,7 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative flex flex-col bg-white rounded-[24px] overflow-hidden border border-[#E8E8E3] transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+              className="group relative flex flex-col bg-white rounded-[24px] overflow-hidden border border-[#E8E8E3] transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full"
             >
               {/* Image Container */}
               <div className="relative h-64 w-full overflow-hidden shrink-0">
@@ -151,5 +151,3 @@ export function ServicesSection() {
     </section>
   )
 }
-
-

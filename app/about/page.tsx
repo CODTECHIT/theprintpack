@@ -48,7 +48,7 @@ export default function About() {
           </h1>
 
           <p className="text-xl text-[#4B4B4B] max-w-3xl mx-auto leading-[1.7] font-light">
-            We are more than just a packaging company. We help businesses replace plastic with eco-friendly, custom-printed packaging through a flexible print-on-demand model.
+            We work with businesses to offer print-on-demand eco packaging that reduces plastic use without compromising on brand quality.
           </p>
         </div>
       </section>
@@ -74,35 +74,35 @@ export default function About() {
             {[
               {
                 icon: <Leaf size={32} />,
-                title: "Environmental Responsibility",
+                title: "Eco Responsibility",
                 desc: "100% eco-friendly materials and carbon-conscious processes.",
                 bg: "bg-[#2E7D32]/5",
                 color: "text-[#2E7D32]"
               },
               {
                 icon: <Award size={32} />,
-                title: "Print & Material Excellence",
+                title: "Quality Excellence",
                 desc: "Premium finishes and high-resolution printing on every batch.",
                 bg: "bg-[#7CB342]/5",
                 color: "text-[#7CB342]"
               },
               {
                 icon: <Zap size={32} />,
-                title: "Efficiency",
+                title: "Operational Speed",
                 desc: "Fast turnaround times to meet your brand's growth demands.",
                 bg: "bg-[#A47551]/5",
                 color: "text-[#A47551]"
               },
               {
                 icon: <Heart size={32} />,
-                title: "Partnership",
+                title: "Client Partnership",
                 desc: "Dedicated support and custom solutions for brands of all sizes.",
                 bg: "bg-[#2E7D32]/5",
                 color: "text-[#2E7D32]"
               }
             ].map((value, i) => (
               <ScrollReveal key={i} delay={i * 0.1}>
-                <div className="group p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] hover:border-[#2E7D32]/20 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/5 hover:-translate-y-2 h-full">
+                <div className="group p-6 md:p-10 rounded-[32px] md:rounded-[40px] border border-[#E8E8E3] hover:border-[#2E7D32]/20 transition-all duration-500 hover:shadow-2xl hover:shadow-[#2E7D32]/5 hover:-translate-y-2 h-full flex flex-col items-center text-center">
                   <div className={`${value.bg} ${value.color} w-16 h-16 rounded-2xl flex items-center justify-center mb-8 group-hover:scale-110 transition-transform duration-500`}>
                     {value.icon}
                   </div>
@@ -138,16 +138,16 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
               <button
                 onClick={handleWhatsApp}
-                className="px-10 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
+                className="px-8 h-14 md:h-12 bg-white text-[#2E7D32] rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
               >
                 <Leaf size={22} />
                 Request a Quote
               </button>
               <button
                 onClick={handleCall}
-                className="px-10 py-5 bg-transparent text-white border-2 border-white/60 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+                className="px-8 h-14 md:h-12 bg-transparent text-white border-2 border-white/60 rounded-xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
               >
-                Call Our Office
+                Speak to Us
               </button>
             </div>
           </div>

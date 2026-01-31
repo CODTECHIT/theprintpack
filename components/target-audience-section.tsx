@@ -51,9 +51,9 @@ export function TargetAudienceSection() {
                     {audiences.map((item, index) => (
                         <div
                             key={index}
-                            className="group bg-[#F9F9F4] p-8 rounded-2xl hover:shadow-lg transition-all duration-300 border border-transparent hover:border-[#E8E8E3] hover:-translate-y-1"
+                            className="group bg-[#F9F9F4] p-8 rounded-2xl hover:shadow-lg transition-all duration-300 border border-transparent hover:border-[#E8E8E3] hover:-translate-y-1 h-full flex flex-col items-center text-center"
                         >
-                            <div className="w-12 h-12 rounded-xl mb-6 flex items-center justify-center transition-colors duration-300 group-hover:bg-white" style={{ backgroundColor: `${item.color}15`, color: item.color }}>
+                            <div className="w-12 h-12 rounded-xl mb-6 flex items-center justify-center transition-colors duration-300 group-hover:bg-white shrink-0" style={{ backgroundColor: `${item.color}15`, color: item.color }}>
                                 <item.icon size={32} />
                             </div>
                             <h3 className="text-xl font-bold text-[#2B2B2B] mb-2">{item.title}</h3>

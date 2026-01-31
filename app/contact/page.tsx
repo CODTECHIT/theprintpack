@@ -56,7 +56,7 @@ Quantity: ${formData.estimatedQuantity}`;
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#2E7D32]/10 rounded-full blur-[120px] -mr-64 -mt-64" />
         <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#A47551]/10 rounded-full blur-[120px] -ml-64 -mb-64" />
 
-        <div className="relative z-10 container max-w-7xl mx-auto px-6 text-center space-y-8">
+        <div className="relative z-10 container max-w-7xl mx-auto px-6 text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#2E7D32]/10 text-[#2E7D32]">
             <Sparkles size={18} />
             <span className="text-xs font-bold uppercase tracking-widest">Connect With Us</span>
@@ -68,7 +68,7 @@ Quantity: ${formData.estimatedQuantity}`;
           </h1>
 
           <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto leading-relaxed font-light">
-            Have a custom requirement or need a quote? Our team is ready to help you find the perfect sustainable solution.
+            Need a quote? Our team is ready to help you find the perfect sustainable solution.
           </p>
         </div>
       </section>
@@ -162,7 +162,7 @@ Quantity: ${formData.estimatedQuantity}`;
                 </div>
 
                 <form
-                  className="space-y-6"
+                  className="space-y-10"
                   onSubmit={handleFormSubmit}
                 >
                   <div className="space-y-8">
@@ -259,7 +259,7 @@ Quantity: ${formData.estimatedQuantity}`;
                       <Clock size={32} />
                     </div>
                     <h3 className="text-4xl font-serif text-white" style={{ fontFamily: 'Georgia, serif' }}>Business Hours</h3>
-                    <p className="text-white font-light">Our Hyderabad office operates during these hours for consultations.</p>
+                    <p className="text-white font-light text-lg">Our Hyderabad office operates during these hours for consultations.</p>
                   </div>
 
                   <div className="space-y-6">
@@ -268,9 +268,9 @@ Quantity: ${formData.estimatedQuantity}`;
                       { day: 'Saturday', hours: '10:00 AM - 4:00 PM IST', active: true },
                       { day: 'Sunday', hours: 'Closed', active: false },
                     ].map((time, i) => (
-                      <div key={i} className={`flex justify-between items-center p-6 rounded-2xl border transition-colors ${time.active ? 'bg-white/5 border-white/10' : 'bg-transparent border-white/10 opacity-70'}`}>
-                        <span className="font-bold text-white">{time.day}</span>
-                        <span className="text-white font-light text-base">{time.hours}</span>
+                      <div key={i} className={`flex flex-col sm:flex-row justify-between sm:items-center gap-1 sm:gap-4 p-5 sm:p-6 rounded-2xl border transition-colors ${time.active ? 'bg-white/5 border-white/10' : 'bg-transparent border-white/10 opacity-70'}`}>
+                        <span className="font-bold text-white text-lg">{time.day}</span>
+                        <span className="text-white font-light text-base sm:text-lg sm:text-right opacity-90">{time.hours}</span>
                       </div>
                     ))}
                   </div>
@@ -342,14 +342,14 @@ Quantity: ${formData.estimatedQuantity}`;
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={handleWhatsApp}
-                className="px-12 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
+                className="px-8 h-14 md:h-12 bg-white text-[#2E7D32] rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
               >
                 <MessageCircle size={22} />
                 Request a Quote
               </button>
               <button
                 onClick={handleCall}
-                className="px-12 py-5 bg-transparent text-white border-2 border-white/20 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+                className="px-8 h-14 md:h-12 bg-transparent text-white border-2 border-white/20 rounded-xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
               >
                 <Phone size={22} />
                 Speak to Us

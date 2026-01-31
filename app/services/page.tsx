@@ -12,7 +12,7 @@ const services = [
     title: 'Paper Carry Bags',
     description: 'Custom printed paper bags made using eco-friendly kraft paper to carry your brand identity offline.',
     image: '/paper-bags.jpg',
-    useCase: 'Ideal for retail stores, restaurants, cafés, and boutiques.',
+    useCase: 'Ideal for retail stores, restaurants, cafés, and boutiques',
     features: [
       'Available in multiple sizes & handle options',
       'Custom logo printing available',
@@ -23,7 +23,7 @@ const services = [
     title: 'Paper Stand-Up Pouches',
     description: 'Eco-friendly stand-up pouches that enhance shelf presence while supporting sustainable packaging goals.',
     image: '/paper-standup-pouch-new.png',
-    useCase: 'Perfect for food brands, dry goods, snacks, coffee, and specialty products.',
+    useCase: 'Perfect for food brands, dry goods, snacks, coffee, and specialty products',
     features: [
       'Suitable for retail & D2C packaging',
       'Custom branding & print options available',
@@ -34,7 +34,7 @@ const services = [
     title: 'Paper Napkins',
     description: 'Branded paper napkins that reinforce your brand while maintaining hygiene and sustainability standards.',
     image: '/eco-napkins.jpg',
-    useCase: 'Designed for restaurants, cafés, events, and corporate use.',
+    useCase: 'Designed for restaurants, cafés, events, and corporate use',
     features: [
       'Single-color or multi-color logo printing',
       'Food-grade, eco-friendly paper',
@@ -45,7 +45,7 @@ const services = [
     title: 'Mailer Boxes',
     description: 'Eco-friendly mailer boxes that replace plastic while delivering a clean, branded unboxing experience.',
     image: '/images/mailer-boxes-realistic.png',
-    useCase: 'Ideal for e-commerce, D2C brands, and online retailers.',
+    useCase: 'Ideal for e-commerce, D2C brands, and online retailers',
     features: [
       'Lightweight and durable for shipping',
       'Custom logo printing available',
@@ -56,7 +56,7 @@ const services = [
     title: 'Cardboard / Corrugated Boxes',
     description: 'Strong, recyclable corrugated boxes designed to protect products and elevate brand presentation.',
     image: '/images/corrugated-boxes-realistic.png',
-    useCase: 'Built for e-commerce shipping, retail packaging, and logistics.',
+    useCase: 'Built for e-commerce shipping, retail packaging, and logistics',
     features: [
       'Multiple sizes and box styles available',
       'Custom branding and printing options',
@@ -100,7 +100,7 @@ export default function Services() {
         <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-[#2E7D32]/10 rounded-full blur-[120px] -ml-64 -mt-64" />
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-[#A47551]/10 rounded-full blur-[120px] -mr-64 -mb-64" />
 
-        <div className="relative z-10 container max-w-7xl mx-auto px-6 text-center space-y-8">
+        <div className="relative z-10 container max-w-7xl mx-auto px-6 text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#2E7D32]/10 text-[#2E7D32]">
             <Leaf size={18} />
             <span className="text-xs font-bold uppercase tracking-widest">Premium Collection</span>
@@ -111,12 +111,11 @@ export default function Services() {
           </h1>
 
           <p className="text-xl text-[#6B6B6B] max-w-2xl mx-auto leading-relaxed font-light">
-            Elevating your brand identity with eco-friendly materials and precision print-on-demand solutions.
+            Elevate your brand with eco-friendly materials and precision print-on-demand solutions.
           </p>
         </div>
       </section>
 
-      {/* Services Grid - More Dynamic */}
       {/* Services Grid - More Dynamic */}
       <section className="py-10 md:py-16 lg:py-24 relative z-10">
         <div className="container max-w-7xl mx-auto px-6">
@@ -250,17 +249,17 @@ export default function Services() {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <button
                 onClick={handleWhatsApp}
-                className="px-12 py-5 bg-white text-[#2E7D32] rounded-2xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
+                className="w-full sm:w-auto px-8 h-14 md:h-12 bg-white text-[#2E7D32] rounded-xl font-bold text-lg hover:shadow-2xl hover:shadow-white/20 transition-all active:scale-95 flex items-center justify-center gap-3"
               >
                 <MessageCircle size={22} />
                 Request a Quote
               </button>
               <button
                 onClick={handleCall}
-                className="px-12 py-5 bg-transparent text-white border-2 border-white/20 rounded-2xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
+                className="w-full sm:w-auto px-8 h-14 md:h-12 bg-transparent text-white border-2 border-white/20 rounded-xl font-bold text-lg hover:bg-white/10 transition-all flex items-center justify-center gap-3"
               >
                 <Phone size={22} />
-                Call Specialist
+                Speak to Us
               </button>
             </div>
           </div>

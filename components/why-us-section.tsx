@@ -32,9 +32,9 @@ export function WhyUsSection() {
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
                     {/* Left Content */}
                     <div className="lg:col-span-4 space-y-6">
-                        <span className="inline-block py-1 px-3 rounded-full bg-white/10 text-xs font-semibold uppercase tracking-wider text-white/90">Why Choose Us</span>
+                        <span className="inline-block py-1 px-3 rounded-full bg-white/10 text-xs font-semibold uppercase tracking-wider text-white">Why Choose Us</span>
                         <h2 className="text-4xl md:text-5xl font-bold leading-tight">Why Businesses Choose The Print Pack Company</h2>
-                        <p className="text-white/80 text-lg">We combine sustainability with speed and customization, giving your brand the best of all worlds.</p>
+                        <p className="text-white text-lg">We combine sustainability with speed and customization, giving your brand the best of all worlds.</p>
                     </div>
 
                     {/* Right Grid */}
@@ -45,7 +45,7 @@ export function WhyUsSection() {
                                     <reason.icon size={32} />
                                 </div>
                                 <h3 className="text-xl font-bold mb-3">{reason.title}</h3>
-                                <p className="text-white/90 leading-relaxed font-light">{reason.description}</p>
+                                <p className="text-white leading-relaxed font-light">{reason.description}</p>
                             </div>
                         ))}
                     </div>
