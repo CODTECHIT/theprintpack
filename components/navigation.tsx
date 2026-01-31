@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 import { MessageCircle, Phone, Menu, X } from 'lucide-react';
 
@@ -18,8 +19,15 @@ export function Navigation() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold text-[#2E7D32] hover:opacity-80 transition-opacity">
-          The Print Pack
+        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <Image
+            src="/logo_cropped.png"
+            alt="The Print Pack"
+            width={580}
+            height={215}
+            className="h-12 w-auto object-contain"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}
